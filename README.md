@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+# GymTrack Pro
 
-`CURSO`
+Análise e Desenvolvimento de sistemas
 
-`DISCIPLINA`
+Eixo 3 - Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio - Turma 02 -
 
-`SEMESTRE`
+3° SEMESTRE/2025
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto em desenvolvimento é uma plataforma digital voltada para o acompanhamento de alunos na academia. Ao criar uma conta, o usuário tem acesso a uma área personalizada, onde pode visualizar demonstrações de exercícios em vídeo, além de receber sugestões de fichas de treino adaptadas aos seus objetivos e nível de condicionamento físico. A plataforma também oferece a possibilidade de acompanhar o progresso, registrar os treinos realizados e ajustar as recomendações de exercícios conforme a evolução do aluno, proporcionando uma experiência mais eficiente e orientada ao resultado.
 
+Além disso, o sistema permite que o aluno interaja com planos de treino pré-definidos ou personalize seu próprio programa, com base em suas preferências e metas, como emagrecimento, ganho de massa muscular ou condicionamento geral. A plataforma visa facilitar o acesso a treinos bem estruturados e orientar os usuários de forma contínua, promovendo engajamento e melhores resultados na prática esportiva.
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Álvaro Natali Kumaira da Fonseca
+* Ana Carolina Alves de Sousa
+* Beatriz Rodrigues Martins
+* Eduardo Porto Botelho
+* Thiago Vinicius Martins Murtinho
+* Vitor de Paula Andrade
 
 ## Orientador
 
-* Nome completo do professor 1
+* Udo Fritzke Junior
 
 ## Instruções de utilização
 
