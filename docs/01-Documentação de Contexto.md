@@ -1,46 +1,40 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto. // teste
+O mercado fitness tem apresentado um crescimento notável nos últimos anos, motivado pela crescente busca por qualidade de vida e bem-estar. Para atender a essa demanda, as academias necessitam de sistemas eficazes para gerenciar seus clientes e serviços. Este projeto sugere a criação de um software para academias, com ênfase no cadastro e gerenciamento de usuários, possibilitando um controle mais organizado e ágil das informações.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Muitas academias ainda dependem de métodos manuais ou sistemas ultrapassados para gerenciar o cadastro de usuários, o que pode causar dificuldades na organização dos dados, atrasos no atendimento e falta de praticidade para os alunos acessarem suas informações. A ausência de um sistema eficiente pode prejudicar a experiência dos usuários e a gestão da academia, tornando os processos mais lentos e propensos a erros.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo principal deste projeto é criar um software para academias que resolva os desafios na gestão de usuários, oferecendo uma ferramenta eficaz tanto para a administração quanto para os alunos, permitindo que eles acessem e gerenciem suas informações de maneira prática e organizada.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Para atingir esse objetivo, foram definidos dois objetivos específicos:
+
+• Criar um sistema de cadastro que possibilite o armazenamento e a gestão dos dados dos usuários de forma segura e acessível.
+• Desenvolver uma interface intuitiva para que os alunos consigam visualizar e atualizar suas informações com facilidade.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Este projeto tem como objetivo modernizar a gestão de academias, trocando métodos manuais por um sistema eficiente que facilite o cadastro e o acesso às informações dos usuários. Muitos estabelecimentos enfrentam dificuldades com sistemas desatualizados, o que prejudica a organização e a experiência dos alunos.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Os objetivos específicos foram definidos para garantir um cadastro seguro e acessível, além de uma interface intuitiva que ofereça facilidade de uso tanto para a administração quanto para os alunos. A pesquisa pode incluir entrevistas com gestores e alunos para compreender melhor as necessidades e limitações dos sistemas atuais.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O público-alvo deste software são academias de pequeno e médio porte que desejam modernizar a gestão de seus usuários, assim como os próprios alunos dessas academias. O sistema será direcionado tanto para os gestores, que precisarão de uma ferramenta prática para administrar os dados dos alunos, quanto para os alunos, que poderão acessar e atualizar suas informações de maneira simples e eficiente.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+## Personas
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+1. João - Gerente de Academia
+• Idade: 35 anos
+• Objetivo: Gerenciar de forma eficiente o cadastro e a documentação dos alunos.
+• Necessidades: Um sistema simples e intuitivo para atualizar informações e controlar planos.
+• Frustrações: Processos manuais e perda de dados em sistemas desatualizados.
+
+2. Maria - Aluna
+• Idade: 28 anos
+• Objetivo: Acessar facilmente suas informações de cadastro e status dos planos.
+• Necessidades: Uma plataforma que permita consultar seus dados, planos e pagamentos de forma rápida.
+• Frustrações: Dificuldade em acessar informações importantes sobre seu plano de treino e pagamento.
