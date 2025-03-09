@@ -8,8 +8,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-| **João - Gerente de Academia** | ![João - Gerente de Academia](![image](https://github.com/user-attachments/assets/f90b5714-841f-4cb2-9dbd-3e6997488c38)
-) |
+| **João - Gerente de Academia** | ![João - Gerente de Academia]![image](https://github.com/user-attachments/assets/20545550-4d50-443e-8fb4-31708ee3d0f5)
+ |
 |-------------------------------|----------------------------------------------|
 | **Idade:**                     | 35 anos                                      |
 | **Ocupação:**                  | Gerente de Academia                         |
@@ -25,8 +25,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 | **Frustrações:**               | Dificuldade em acessar informações sobre seu plano de treino e pagamentos. |
 | **Hobbies:**                   | Correr, yoga                                |
 
-| **Carlos - Proprietário de Academia** | ![Carlos - Proprietário de Academia](![image](https://github.com/user-attachments/assets/c97771ff-e5d8-4e5c-b84f-b5c2bab73a7a)
-) |
+| **Carlos - Proprietário de Academia** | ![Carlos - Proprietário de Academia]![image](https://github.com/user-attachments/assets/c29c537c-a421-4882-af78-3205e380e914)
+ |
 |--------------------------------------|-----------------------------------------------|
 | **Idade:**                          | 45 anos                                       |
 | **Ocupação:**                       | Proprietário de Academia                      |
@@ -42,8 +42,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 | **Frustrações:**                    | Dificuldade em entender seu plano de treino e acompanhar seu progresso. |
 | **Hobbies:**                        | Dança, caminhada                               |
 
-| **Ricardo - Recepcionista de Academia** | ![Ricardo - Recepcionista](![image](https://github.com/user-attachments/assets/4af24652-7f45-473b-b35a-4b538454fe77)
-)       |
+| **Ricardo - Recepcionista de Academia** | ![Ricardo - Recepcionista]![image](https://github.com/user-attachments/assets/7cadd68c-f62e-4bf9-98e6-1a25ac8cda8c)
+       |
 |----------------------------------------|-------------------------------------------------|
 | **Idade:**                             | 30 anos                                         |
 | **Ocupação:**                          | Recepcionista de Academia                       |
