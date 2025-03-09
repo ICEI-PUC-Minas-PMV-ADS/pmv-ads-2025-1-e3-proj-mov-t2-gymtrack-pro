@@ -34,7 +34,20 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 | **Juliana - Aluna Iniciante**       | ![Juliana - Aluna Iniciante](https://github.com/user-attachments/assets/a8a9bf23-ce19-4993-b4dd-9a2cbd970cde)  |
 |-------------------------------------|-------------------------------------------------------------|
-| **Idade:**                          | 22 anos                                        
+| **Idade:**                          | 22 anos                                                     |
+| **Ocupação:**                       | Aluna                                                       |
+| **Necessidades:**                   | Acesso fácil ao seu progresso, planos e sugestões de treino.|
+| **Frustrações:**                    | Dificuldade em entender seu plano de treino e acompanhar seu progresso. |
+| **Hobbies:**                        | Dança, caminhada                                             |
+
+| **Ricardo - Recepcionista de Academia** | ![Ricardo - Recepcionista](https://github.com/user-attachments/assets/7cadd68c-f62e-4bf9-98e6-1a25ac8cda8c) |
+|----------------------------------------|-------------------------------------------------------------|
+| **Idade:**                             | 30 anos                                                     |
+| **Ocupação:**                          | Recepcionista de Academia                                   |
+| **Necessidades:**                      | Sistema rápido para registrar novos membros e organizar planos e pagamentos. |
+| **Frustrações:**                       | Falta de um sistema centralizado, causando lentidão no atendimento. |
+| **Hobbies:**                           | Cinema, culinária                                            |
+                   
 
 ## Histórias de Usuários
 
