@@ -24,17 +24,3 @@ Os objetivos específicos foram definidos para garantir um cadastro seguro e ace
 ## Público-Alvo
 
 O público-alvo deste software são academias de pequeno e médio porte que desejam modernizar a gestão de seus usuários, assim como os próprios alunos dessas academias. O sistema será direcionado tanto para os gestores, que precisarão de uma ferramenta prática para administrar os dados dos alunos, quanto para os alunos, que poderão acessar e atualizar suas informações de maneira simples e eficiente.
-
-## Personas
-
-1. **João - Gerente de Academia**  
-   - **Idade:** 35 anos  
-   - **Objetivo:** Gerenciar de forma eficiente o cadastro e a documentação dos alunos.  
-   - **Necessidades:** Um sistema simples e intuitivo para atualizar informações e controlar planos.  
-   - **Frustrações:** Processos manuais e perda de dados em sistemas desatualizados.  
-
-2. **Maria - Aluna**  
-   - **Idade:** 28 anos  
-   - **Objetivo:** Acessar facilmente suas informações de cadastro e status dos planos.  
-   - **Necessidades:** Uma plataforma que permita consultar seus dados, planos e pagamentos de forma rápida.  
-   - **Frustrações:** Dificuldade em acessar informações importantes sobre seu plano de treino e pagamento.
