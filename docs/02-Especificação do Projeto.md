@@ -53,13 +53,12 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 | **EU COMO...** `Aluna`                  | **QUERO/PRECISO** acessar facilmente minhas informações de cadastro e plano de treino | **PARA** poder acompanhar meu progresso e garantir que estou seguindo corretamente as orientações |
 |-----------------------------------------|----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| **EU COMO...** `Aluna`                  | **QUERO/PRECISO** consultar o status dos meus pagamentos e planos                      | **PARA** ter controle financeiro e saber quando precisar renovar                                  |
-| **EU COMO...** `Gerente de Academia`    | **QUERO/PRECISO** adicionar e atualizar os cadastros de novos alunos                    | **PARA** manter as informações da academia sempre atualizadas                                   |
-| **EU COMO...** `Gerente de Academia`    | **QUERO/PRECISO** visualizar a lista de alunos ativos e inativos                        | **PARA** facilitar o controle e a organização da academia                                        |
-| **EU COMO...** `Proprietário de Academia` | **QUERO/PRECISO** ver relatórios de desempenho financeiro da academia                  | **PARA** poder tomar decisões estratégicas para melhorar os lucros e serviços oferecidos          |
-| **EU COMO...** `Proprietário de Academia` | **QUERO/PRECISO** editar planos de treino e serviços oferecidos                        | **PARA** personalizar conforme as necessidades da academia                                       |
-| **EU COMO...** `Recepcionista de Academia` | **QUERO/PRECISO** registrar novos membros rapidamente                                  | **PARA** facilitar o processo de matrícula                                                         |
-| **EU COMO...** `Recepcionista de Academia` | **QUERO/PRECISO** acessar rapidamente o histórico de pagamentos de cada aluno          | **PARA** fornecer um atendimento mais eficiente                                                   |
+| **EU COMO...** `Aluna`                  | **QUERO/PRECISO** consultar o seu plano atual.                      | **PARA** ter controle financeiro e saber quando precisar renovar.                                  |
+| **EU COMO...** `Gerente de Academia`    | **QUERO/PRECISO** adicionar e atualizar os cadastros de novos alunos.                    | **PARA** manter as informações da academia sempre atualizadas.                                   |
+| **EU COMO...** `Proprietário de Academia` | **QUERO/PRECISO** ver relatórios de desempenho financeiro da academia.                  | **PARA** poder tomar decisões estratégicas para melhorar os lucros e serviços oferecidos.          |
+| **EU COMO...** `Proprietário de Academia` | **QUERO/PRECISO** editar planos de treino e serviços oferecidos.                        | **PARA** personalizar conforme as necessidades da academia.                                       |
+| **EU COMO...** `Recepcionista de Academia` | **QUERO/PRECISO** registrar novos membros rapidamente.                                  | **PARA** facilitar o processo de matrícula.                                                         |
+| **EU COMO...** `Recepcionista de Academia` | **QUERO/PRECISO** acessar rapidamente o planos dos alunos.          | **PARA** fornecer um atendimento mais eficiente.                                                   |
 
 ## Modelagem do Processo de Negócio 
 
@@ -98,17 +97,32 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+| ID     | Descrição do Requisito                                           | Prioridade |
+|--------|------------------------------------------------------------------|------------|
+| RF-001 | Permitir que a recepcionista mude as fichas de treino disponiveis.      | ALTA       |
+| RF-002 | Permitir que a recepcionista mude planos dos alunos. | ALTA       |
+| RF-003 | Permitir que o aluno consulte suas informações de cadastro.      | ALTA       |
+| RF-004 | Permitir que o recepcionista registre novos membros.             | ALTA       |
+| RF-005 | Permitir que o aluno consulte suas fichas de treino.             | ALTA       |
+| RF-006 | Permitir que a recepcionista edite as suas informações pessoais dos aluno.  | MÉDIA      |
+| RF-007 | Permitir que o aluno visualize seu plano.                      | MÉDIA      |
+| RF-008 | Permitir que o recepcionista visualize o plano de cada aluno. | ALTA       |
+| RF-009 | Permitir que a recepcionaista faça a matrícula dos alunos.               | ALTA       |
+| RF-010 | Permitir que o aluno marque aulas com os treinadores disponíveis. | MÉDIA      |
+| RF-011 | Permitir que o aluno visualize o horário de funcionamento.              | MÉDIA      |
+| RF-012 | Permitir que o usuário entre em sua conta com um login simples (e-mail e senha). | ALTA       |
+
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+| ID    | Descrição do Requisito                                         | Prioridade |
+|-------|---------------------------------------------------------------|------------|
+| RNF-001| O sistema deve ser responsivo para dispositivos móveis.       | MÉDIA      |
+| RNF-002| A aplicação deve ser compatível com os navegadores mais usados.| ALTA       |
+| RNF-003| O sistema deve carregar em até 3 segundos.                    | ALTA       |
+| RNF-004| O sistema deve ser seguro, protegendo os dados do usuário.    | ALTA       |
+| RNF-005| O sistema deve ser fácil de usar.                             | MÉDIA      |
+| RNF-006| O sistema deve funcionar sem erros em diferentes dispositivos.| BAIXA      |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
