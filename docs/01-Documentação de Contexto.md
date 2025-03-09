@@ -28,13 +28,13 @@ O público-alvo deste software são academias de pequeno e médio porte que dese
 ## Personas
 
 1. João - Gerente de Academia
-• Idade: 35 anos
+• Idade: 35 anos.
 • Objetivo: Gerenciar de forma eficiente o cadastro e a documentação dos alunos.
 • Necessidades: Um sistema simples e intuitivo para atualizar informações e controlar planos.
 • Frustrações: Processos manuais e perda de dados em sistemas desatualizados.
 
 2. Maria - Aluna
-• Idade: 28 anos
+• Idade: 28 anos.
 • Objetivo: Acessar facilmente suas informações de cadastro e status dos planos.
 • Necessidades: Uma plataforma que permita consultar seus dados, planos e pagamentos de forma rápida.
 • Frustrações: Dificuldade em acessar informações importantes sobre seu plano de treino e pagamento.
