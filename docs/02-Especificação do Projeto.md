@@ -51,21 +51,15 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+| **EU COMO...** `Aluna`                  | **QUERO/PRECISO** acessar facilmente minhas informações de cadastro e plano de treino | **PARA** poder acompanhar meu progresso e garantir que estou seguindo corretamente as orientações |
+|-----------------------------------------|----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **EU COMO...** `Aluna`                  | **QUERO/PRECISO** consultar o status dos meus pagamentos e planos                      | **PARA** ter controle financeiro e saber quando precisar renovar                                  |
+| **EU COMO...** `Gerente de Academia`    | **QUERO/PRECISO** adicionar e atualizar os cadastros de novos alunos                    | **PARA** manter as informações da academia sempre atualizadas                                   |
+| **EU COMO...** `Gerente de Academia`    | **QUERO/PRECISO** visualizar a lista de alunos ativos e inativos                        | **PARA** facilitar o controle e a organização da academia                                        |
+| **EU COMO...** `Proprietário de Academia` | **QUERO/PRECISO** ver relatórios de desempenho financeiro da academia                  | **PARA** poder tomar decisões estratégicas para melhorar os lucros e serviços oferecidos          |
+| **EU COMO...** `Proprietário de Academia` | **QUERO/PRECISO** editar planos de treino e serviços oferecidos                        | **PARA** personalizar conforme as necessidades da academia                                       |
+| **EU COMO...** `Recepcionista de Academia` | **QUERO/PRECISO** registrar novos membros rapidamente                                  | **PARA** facilitar o processo de matrícula                                                         |
+| **EU COMO...** `Recepcionista de Academia` | **QUERO/PRECISO** acessar rapidamente o histórico de pagamentos de cada aluno          | **PARA** fornecer um atendimento mais eficiente                                                   |
 
 ## Modelagem do Processo de Negócio 
 
