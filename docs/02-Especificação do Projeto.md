@@ -8,37 +8,48 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-1. **João - Gerente de Academia**  
-   - **Idade:** 35 anos  
-   - **Objetivo:** Gerenciar de forma eficiente o cadastro e a documentação dos alunos.  
-   - **Necessidades:** Um sistema simples e intuitivo para atualizar informações e controlar planos.  
-   - **Frustrações:** Processos manuais e perda de dados em sistemas desatualizados.  
+| **João - Gerente de Academia** | ![João - Gerente de Academia](![image](https://github.com/user-attachments/assets/f90b5714-841f-4cb2-9dbd-3e6997488c38)
+) |
+|-------------------------------|----------------------------------------------|
+| **Idade:**                     | 35 anos                                      |
+| **Ocupação:**                  | Gerente de Academia                         |
+| **Necessidades:**              | Sistema simples e eficiente para gerenciar cadastros e documentos dos alunos. |
+| **Frustrações:**               | Processos manuais e perda de dados em sistemas desatualizados. |
+| **Hobbies:**                   | Natação, futebol                            |
 
-2. **Maria - Aluna**  
-   - **Idade:** 28 anos  
-   - **Objetivo:** Acessar facilmente suas informações de cadastro e status dos planos.  
-   - **Necessidades:** Uma plataforma que permita consultar seus dados, planos e pagamentos de forma rápida.  
-   - **Frustrações:** Dificuldade em acessar informações importantes sobre seu plano de treino e pagamento.  
+| **Maria - Aluna**              | ![Maria - Aluna](URL-da-imagem)              |
+|-------------------------------|----------------------------------------------|
+| **Idade:**                     | 28 anos                                      |
+| **Ocupação:**                  | Aluna                                        |
+| **Necessidades:**              | Acessar facilmente suas informações de cadastro e planos. |
+| **Frustrações:**               | Dificuldade em acessar informações sobre seu plano de treino e pagamentos. |
+| **Hobbies:**                   | Correr, yoga                                |
 
-3. **Carlos - Proprietário de Academia**  
-   - **Idade:** 45 anos  
-   - **Objetivo:** Garantir que sua academia tenha uma gestão eficiente e organizada.  
-   - **Necessidades:** Um software que facilite o controle de cadastros, pagamentos e planos de alunos.  
-   - **Frustrações:** Falta de uma solução integrada para gerenciar diversos aspectos da academia, como alunos, pagamentos e relatórios.
+| **Carlos - Proprietário de Academia** | ![Carlos - Proprietário de Academia](![image](https://github.com/user-attachments/assets/c97771ff-e5d8-4e5c-b84f-b5c2bab73a7a)
+) |
+|--------------------------------------|-----------------------------------------------|
+| **Idade:**                          | 45 anos                                       |
+| **Ocupação:**                       | Proprietário de Academia                      |
+| **Necessidades:**                   | Sistema eficiente para controlar planos, pagamentos e cadastros de alunos. |
+| **Frustrações:**                    | Falta de uma solução integrada para gerenciar a academia. |
+| **Hobbies:**                        | Golfe, leitura de livros de gestão            |
 
-4. **Juliana - Aluna Iniciante**  
-   - **Idade:** 22 anos  
-   - **Objetivo:** Começar a treinar e melhorar sua condição física.  
-   - **Necessidades:** Acesso fácil ao seu progresso, planos e sugestões de treinos.  
-   - **Frustrações:** Dificuldade em entender seu plano de treino e acompanhar seu progresso na academia.
+| **Juliana - Aluna Iniciante**       | ![Juliana - Aluna Iniciante](URL-da-imagem)     |
+|-------------------------------------|-------------------------------------------------|
+| **Idade:**                          | 22 anos                                         |
+| **Ocupação:**                       | Aluna                                           |
+| **Necessidades:**                   | Acesso fácil ao seu progresso, planos e sugestões de treino. |
+| **Frustrações:**                    | Dificuldade em entender seu plano de treino e acompanhar seu progresso. |
+| **Hobbies:**                        | Dança, caminhada                               |
 
-5. **Ricardo - Recepcionista de Academia**  
-   - **Idade:** 30 anos  
-   - **Objetivo:** Agilizar o atendimento e o cadastro de novos alunos.  
-   - **Necessidades:** Uma ferramenta simples para registrar novos membros e organizar informações sobre pagamentos e planos.  
-   - **Frustrações:** Falta de um sistema centralizado para gerenciar os registros de alunos e pagamentos, causando lentidão no atendimento.
-
-
+| **Ricardo - Recepcionista de Academia** | ![Ricardo - Recepcionista](![image](https://github.com/user-attachments/assets/4af24652-7f45-473b-b35a-4b538454fe77)
+)       |
+|----------------------------------------|-------------------------------------------------|
+| **Idade:**                             | 30 anos                                         |
+| **Ocupação:**                          | Recepcionista de Academia                       |
+| **Necessidades:**                      | Sistema rápido para registrar novos membros e organizar planos e pagamentos. |
+| **Frustrações:**                       | Falta de um sistema centralizado, causando lentidão no atendimento. |
+| **Hobbies:**                           | Cinema, culinária                              |
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
