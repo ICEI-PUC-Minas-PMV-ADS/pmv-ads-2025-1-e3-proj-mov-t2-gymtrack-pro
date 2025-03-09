@@ -8,48 +8,34 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-| **João - Gerente de Academia** | ![João - Gerente de Academia]![image](https://github.com/user-attachments/assets/20545550-4d50-443e-8fb4-31708ee3d0f5)
- |
-|-------------------------------|----------------------------------------------|
-| **Idade:**                     | 35 anos                                      |
-| **Ocupação:**                  | Gerente de Academia                         |
+| **João - Gerente de Academia** | ![João - Gerente de Academia](https://github.com/user-attachments/assets/20545550-4d50-443e-8fb4-31708ee3d0f5) |
+|-------------------------------|------------------------------------------------------------|
+| **Idade:**                     | 35 anos                                                    |
+| **Ocupação:**                  | Gerente de Academia                                         |
 | **Necessidades:**              | Sistema simples e eficiente para gerenciar cadastros e documentos dos alunos. |
 | **Frustrações:**               | Processos manuais e perda de dados em sistemas desatualizados. |
-| **Hobbies:**                   | Natação, futebol                            |
+| **Hobbies:**                   | Natação, futebol                                            |
 
-| **Maria - Aluna**              | ![Maria - Aluna](URL-da-imagem)              |
-|-------------------------------|----------------------------------------------|
-| **Idade:**                     | 28 anos                                      |
-| **Ocupação:**                  | Aluna                                        |
-| **Necessidades:**              | Acessar facilmente suas informações de cadastro e planos. |
+| **Maria - Aluna**              | ![Maria - Aluna](https://github.com/user-attachments/assets/568ce894-ec57-4fb9-b986-c90249a38b9d)  |
+|-------------------------------|------------------------------------------------------------|
+| **Idade:**                     | 28 anos                                                    |
+| **Ocupação:**                  | Aluna                                                      |
+| **Necessidades:**              | Acessar facilmente suas informações de cadastro e planos.  |
 | **Frustrações:**               | Dificuldade em acessar informações sobre seu plano de treino e pagamentos. |
-| **Hobbies:**                   | Correr, yoga                                |
+| **Hobbies:**                   | Correr, yoga                                                |
 
-| **Carlos - Proprietário de Academia** | ![Carlos - Proprietário de Academia]![image](https://github.com/user-attachments/assets/c29c537c-a421-4882-af78-3205e380e914)
- |
-|--------------------------------------|-----------------------------------------------|
-| **Idade:**                          | 45 anos                                       |
-| **Ocupação:**                       | Proprietário de Academia                      |
+| **Carlos - Proprietário de Academia** | ![Carlos - Proprietário de Academia](https://github.com/user-attachments/assets/c29c537c-a421-4882-af78-3205e380e914) |
+|--------------------------------------|-------------------------------------------------------------|
+| **Idade:**                          | 45 anos                                                     |
+| **Ocupação:**                       | Proprietário de Academia                                    |
 | **Necessidades:**                   | Sistema eficiente para controlar planos, pagamentos e cadastros de alunos. |
-| **Frustrações:**                    | Falta de uma solução integrada para gerenciar a academia. |
-| **Hobbies:**                        | Golfe, leitura de livros de gestão            |
+| **Frustrações:**                    | Falta de uma solução integrada para gerenciar a academia.   |
+| **Hobbies:**                        | Golfe, leitura de livros de gestão                          |
 
-| **Juliana - Aluna Iniciante**       | ![Juliana - Aluna Iniciante](URL-da-imagem)     |
-|-------------------------------------|-------------------------------------------------|
-| **Idade:**                          | 22 anos                                         |
-| **Ocupação:**                       | Aluna                                           |
-| **Necessidades:**                   | Acesso fácil ao seu progresso, planos e sugestões de treino. |
-| **Frustrações:**                    | Dificuldade em entender seu plano de treino e acompanhar seu progresso. |
-| **Hobbies:**                        | Dança, caminhada                               |
+| **Juliana - Aluna Iniciante**       | ![Juliana - Aluna Iniciante](https://github.com/user-attachments/assets/a8a9bf23-ce19-4993-b4dd-9a2cbd970cde)  |
+|-------------------------------------|-------------------------------------------------------------|
+| **Idade:**                          | 22 anos                                        
 
-| **Ricardo - Recepcionista de Academia** | ![Ricardo - Recepcionista]![image](https://github.com/user-attachments/assets/7cadd68c-f62e-4bf9-98e6-1a25ac8cda8c)
-       |
-|----------------------------------------|-------------------------------------------------|
-| **Idade:**                             | 30 anos                                         |
-| **Ocupação:**                          | Recepcionista de Academia                       |
-| **Necessidades:**                      | Sistema rápido para registrar novos membros e organizar planos e pagamentos. |
-| **Frustrações:**                       | Falta de um sistema centralizado, causando lentidão no atendimento. |
-| **Hobbies:**                           | Cinema, culinária                              |
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
