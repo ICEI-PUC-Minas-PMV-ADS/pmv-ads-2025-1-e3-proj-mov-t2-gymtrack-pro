@@ -8,19 +8,36 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+1. **João - Gerente de Academia**  
+   - **Idade:** 35 anos  
+   - **Objetivo:** Gerenciar de forma eficiente o cadastro e a documentação dos alunos.  
+   - **Necessidades:** Um sistema simples e intuitivo para atualizar informações e controlar planos.  
+   - **Frustrações:** Processos manuais e perda de dados em sistemas desatualizados.  
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+2. **Maria - Aluna**  
+   - **Idade:** 28 anos  
+   - **Objetivo:** Acessar facilmente suas informações de cadastro e status dos planos.  
+   - **Necessidades:** Uma plataforma que permita consultar seus dados, planos e pagamentos de forma rápida.  
+   - **Frustrações:** Dificuldade em acessar informações importantes sobre seu plano de treino e pagamento.  
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+3. **Carlos - Proprietário de Academia**  
+   - **Idade:** 45 anos  
+   - **Objetivo:** Garantir que sua academia tenha uma gestão eficiente e organizada.  
+   - **Necessidades:** Um software que facilite o controle de cadastros, pagamentos e planos de alunos.  
+   - **Frustrações:** Falta de uma solução integrada para gerenciar diversos aspectos da academia, como alunos, pagamentos e relatórios.
+
+4. **Juliana - Aluna Iniciante**  
+   - **Idade:** 22 anos  
+   - **Objetivo:** Começar a treinar e melhorar sua condição física.  
+   - **Necessidades:** Acesso fácil ao seu progresso, planos e sugestões de treinos.  
+   - **Frustrações:** Dificuldade em entender seu plano de treino e acompanhar seu progresso na academia.
+
+5. **Ricardo - Recepcionista de Academia**  
+   - **Idade:** 30 anos  
+   - **Objetivo:** Agilizar o atendimento e o cadastro de novos alunos.  
+   - **Necessidades:** Uma ferramenta simples para registrar novos membros e organizar informações sobre pagamentos e planos.  
+   - **Frustrações:** Falta de um sistema centralizado para gerenciar os registros de alunos e pagamentos, causando lentidão no atendimento.
+
 
 ## Histórias de Usuários
 
