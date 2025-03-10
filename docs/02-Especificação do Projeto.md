@@ -158,12 +158,7 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
-
-![Simple Project Timeline](img/02-project-timeline.png)
-
+O gerenciamento da equipe é realizado de forma colaborativa, considerando a divisão de tarefas conforme as habilidades e disponibilidade dos integrantes. A comunicação ocorre por meio de reuniões periódicas e mensagens em grupo, garantindo alinhamento e progresso contínuo do projeto. As responsabilidades incluem a definição de requisitos, modelagem, implementação e documentação do sistema, sendo distribuídas de acordo com a afinidade de cada membro com as respectivas atividades.
 ## Gestão de Orçamento
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
-
-![Orçamento](img/02-orcamento.png)
+O desenvolvimento do sistema está sendo realizado sem custos financeiros diretos. O projeto utiliza ferramentas gratuitas e recursos disponíveis pelos membros da equipe, sem a necessidade de investimentos adicionais em infraestrutura, licenças de software ou mão de obra contratada. Dessa forma, não há um orçamento formal a ser gerenciado, apenas o controle de tempo e esforço dos envolvidos.
