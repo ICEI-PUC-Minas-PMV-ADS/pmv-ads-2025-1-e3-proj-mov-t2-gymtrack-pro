@@ -17,6 +17,7 @@ Além disso, o sistema permite que o aluno interaja com planos de treino pré-de
 * Eduardo Porto Botelho
 * Thiago Vinicius Martins Murtinho
 * Vitor de Paula Andrade
+* João Gabriel Barrozo Rocha
 
 ## Orientador
 
