@@ -12,7 +12,7 @@ Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Defini�
 | Desenvolvimento     |                   |              -------                 |
 | Homologação         |                   |              -------                 |
 | Produção            |                   |              -------                 |
-| Repositório Git     | GitHub .zip(code) |              -------                 |
+| Repositório Git     | GitHub            |              -------                 |
 | Desenvolvimento Móvel |                 |              -------                 |
 | Testes              |                   |              -------                 |
 | API Backend         |                   |              -------                 |
