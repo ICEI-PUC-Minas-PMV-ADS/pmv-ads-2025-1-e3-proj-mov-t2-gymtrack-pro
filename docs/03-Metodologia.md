@@ -49,12 +49,13 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
    >***Eduardo Porto Botelho***</br>
 
 - Product Owner: Responsável pela definição e priorização dos requisitos do produto, garantindo que a equipe esteja sempre focada nas necessidades do cliente.
-  >***Thiago Murtinho***</br>
+  >***Thiago Vinícius Martins Murtinho***</br>
+  >***Eduardo Porto Botelho***</br>
 
 - Equipe de Desenvolvimento: Responsável por implementar e testar o código, desenvolver as funcionalidades, realizar correções e entregar as soluções. No estágio atual do projeto, o desenvolvimento está focado em React Native.
    >***Álvaro Natali Kumaira da Fonseca</br>
    Vitor de Paula Andrade***</br>
-   >***Thiago Murtinho***</br>
+   >***Thiago Vinícius Martins Murtinho***</br>
 
 - Equipe de Design: Responsável pela criação da interface gráfica, experiência do usuário (UX) e elementos visuais do aplicativo. No momento, a equipe está desenvolvendo o design da página inicial.</br>
    >***Ana Carolina Alves de Sousa </br>
