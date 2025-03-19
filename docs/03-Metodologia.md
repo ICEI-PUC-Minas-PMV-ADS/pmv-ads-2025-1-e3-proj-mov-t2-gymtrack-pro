@@ -12,7 +12,7 @@ Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Defini�
 | Desenvolvimento     |                   |              -------                 |
 | Homologação         |                   |              -------                 |
 | Produção            |                   |              -------                 |
-| Repositório Git     | GitHub            |(https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e3-proj-mov-t2-gymtrack-pro)|
+| Repositório Git     | GitHub            |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e3-proj-mov-t2-gymtrack-pro|
 | Desenvolvimento Móvel |                 |              -------                 |
 | Testes              |                   |              -------                 |
 | API Backend         |                   |              -------                 |
