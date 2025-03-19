@@ -24,6 +24,8 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
+> **Prototipo de Teste: https://marvelapp.com/prototype/8g763gh**
+
  ## **Tela 1 - inicial**: **Tela 2 - Home**: 
  
 ![Tela 1](https://github.com/user-attachments/assets/8f72be43-9fb3-4276-a736-ddf039b96195)
