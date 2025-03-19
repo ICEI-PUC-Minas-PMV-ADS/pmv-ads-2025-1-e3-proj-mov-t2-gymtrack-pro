@@ -3,7 +3,7 @@
 | Perfis de Administrador | Perfil de Cliente |
 |-------------------------|--------------------|
 | Usuário responsável pelo gerenciamento e abastecimento do site. | Usuário que irá utilizar o conteúdo e a interface como consumidor.|
-| Abastecer a página inicial com informações de notícias atualizadas, verificadas e que promovam interesse pela plataforma. | Ter acesso ao seu perfil próprio, onde consiga visualizar suas rotinas de treino de forma centralizada e intuitiva. |
+| Abastecer a página inicial com informações de notícias atualizadas, verificadas e que promovam interesse pela plataforma. | Ter acesso ao seu perfil próprio, onde consiga visualizar e programar suas rotinas de treino de forma centralizada e intuitiva. |
 
 ## Personas
 
