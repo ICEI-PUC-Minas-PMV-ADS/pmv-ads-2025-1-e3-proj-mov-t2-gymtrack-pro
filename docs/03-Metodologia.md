@@ -72,7 +72,8 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 ### Processo
 
 O grupo está utilizando a metodologia ágil Scrum para organizar o desenvolvimento do projeto. As atividades são divididas em sprints semanais, com definição de tarefas e acompanhamento do progresso ao longo do tempo. Para gerenciar essas tarefas e monitorar o andamento do projeto, está sendo utilizado o recurso GitHub Projects, que permite organizar as atividades em um quadro Kanban. Dessa forma, é possível visualizar facilmente o status de cada tarefa, facilitar a comunicação entre os membros da equipe e manter o controle do desenvolvimento da solução de forma centralizada.
-![image](https://github.com/user-attachments/assets/91b863a7-2f14-4d02-b0ff-8a41623cf9b2)
+![image](https://github.com/user-attachments/assets/dfaa5d3c-4a06-4536-aee2-96e3c319a489)
+
 
 ### Ferramentas
 
