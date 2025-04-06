@@ -163,7 +163,8 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 ## Gerenciamento de Equipe
 
-O gerenciamento da equipe é realizado de forma colaborativa, considerando a divisão de tarefas conforme as habilidades e disponibilidade dos integrantes. A comunicação ocorre por meio de reuniões periódicas e mensagens em grupo, garantindo alinhamento e progresso contínuo do projeto. As responsabilidades incluem a definição de requisitos, modelagem, implementação e documentação do sistema, sendo distribuídas de acordo com a afinidade de cada membro com as respectivas atividades.
+![image](https://github.com/user-attachments/assets/dfaa5d3c-4a06-4536-aee2-96e3c319a489)
+
 ## Gestão de Orçamento
 
 O desenvolvimento do sistema está sendo realizado sem custos financeiros diretos. O projeto utiliza ferramentas gratuitas e recursos disponíveis pelos membros da equipe, sem a necessidade de investimentos adicionais em infraestrutura, licenças de software ou mão de obra contratada. Dessa forma, não há um orçamento formal a ser gerenciado, apenas o controle de tempo e esforço dos envolvidos.
