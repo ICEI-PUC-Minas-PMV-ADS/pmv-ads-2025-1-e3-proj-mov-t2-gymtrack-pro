@@ -175,6 +175,10 @@ Será utilizado para visualizar claramente as tarefas, identificar dependências
 - **Dependências entre tarefas:** Indicar claramente quais atividades são dependentes umas das outras para evitar bloqueios.
 - **Caminho Crítico:** Monitoramento constante das tarefas críticas, garantindo o cumprimento dos prazos.
 
+### Gráfico de Gantt
+
+Ferramenta visual essencial para controlar o cronograma, mostrando as datas previstas de início e fim para cada tarefa, facilitando o acompanhamento contínuo do progresso do projeto.
+
 
 ## Gerenciamento de Equipe
 
