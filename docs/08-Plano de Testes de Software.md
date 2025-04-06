@@ -18,15 +18,23 @@ Os testes funcionais serão conduzidos por participantes do grupo que não estiv
 |        Passos         | 1 - Clicar no botão "Faça seu login!";<br> 2 - Preencher os campos "Email ou Login de acesso", "Senha";<br> 3 - Clicar no botão "Login".  |
 |  Critérios de Êxito   | O aplicação deve permitir o acesso usuário através dos dados cadastrados. | 
 
+#### CT-3
+|Caso de Teste    | CT-3 - Gerenciar conta |
+|:---|:---|
+| Requisitos Associados | RF-03	A aplicação deve permitir que o usuário gerencie sua conta.|
+| Objetivo do Teste | Verificar se ao entrar na página do seu perfil, o usuário conseguirá deletar sua conta. |
+| Passos | 1 - Na tela de perfil clicar em deletar conta;<br> 2 - Confirmar que deseja deletar sua conta.<br> |
+| Critérios de êxito | Ao clicar em deletar conta deve aparecer uma mensagem confirmando se o usuário deseja deletar a conta e, a partir desta confirmação, o usuário deve ser capaz de excluir sua conta no aplicativo.|
+
+#### CT-4
+|Caso de Teste    | CT-4 – Gerenciar perfil |
+|:---|:---|
+| Requisitos Associados |RF-04	A aplicação deve permitir que o usuário gerencie seu perfil.|
+| Objetivo do Teste | Verificar se a aplicação permite aos usuários gerenciar seu perfil, alterando fotos e informações pessoais|
+| Passos | 1 - Na tela de perfil clicar em alterar/excluir foto;<br> 2 - Na tela de perfil clicar em alterar informações pessoais;<br> 3 - Clicar em confirmar.  |
+| Critérios de êxito | Ao clicar nestas opções o usuário deve conseguir alterar ou excluir sua foto e informações pessoais, como sua bio.|
+
 
 ## Ferramentas de Testes (Opcional)
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+Os testes serão realizados diretamente na aplicação assim que seu desenvolvimento for concluído.
