@@ -23,4 +23,4 @@ A definição dos objetivos específicos visa garantir um cadastro seguro e aces
 
 ## Público-Alvo
 
-O público-alvo deste software são academias de pequeno e médio porte que desejam modernizar a gestão de seus usuários, assim como os próprios alunos dessas academias. O sistema será direcionado tanto para os gestores, que precisarão de uma ferramenta prática para administrar os dados dos alunos, quanto para os alunos, que poderão acessar e atualizar suas informações de maneira simples e eficiente.
+O software será direcionado a academias de pequeno e médio porte que desejam modernizar a gestão de seus usuários, bem como aos próprios alunos dessas instituições. O sistema atenderá tanto os gestores, que necessitam de uma ferramenta prática para administrar os dados, quanto os alunos, que poderão acessar e atualizar suas informações de forma simples, rápida e eficiente.
