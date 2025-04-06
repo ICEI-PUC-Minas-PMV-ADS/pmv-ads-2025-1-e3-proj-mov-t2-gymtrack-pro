@@ -64,7 +64,6 @@ O grupo está adotando a metodologia ágil Scrum para organizar o desenvolviment
 
 Essa abordagem permite visualizar facilmente o status de cada atividade, facilita a comunicação entre os membros da equipe e centraliza o controle sobre o desenvolvimento da solução.
 
-![image](https://github.com/user-attachments/assets/dfaa5d3c-4a06-4536-aee2-96e3c319a489)
 
 
 ### Ferramentas
