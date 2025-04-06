@@ -101,14 +101,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-001 | Permitir que a recepcionista mude as fichas de treino disponiveis.      | ALTA       |
 | RF-002 | Permitir que a recepcionista mude planos dos alunos. | ALTA       |
 | RF-003 | Permitir que o aluno consulte suas informações de cadastro.      | ALTA       |
-| RF-004 | Permitir que o recepcionista registre novos membros.             | ALTA       |
+| RF-004 | Permitir que o aluno mude sua meta de treinos mensais.             | ALTA       |
 | RF-005 | Permitir que o aluno consulte suas fichas de treino.             | ALTA       |
 | RF-006 | Permitir que a recepcionista edite as suas informações pessoais dos aluno.  | MÉDIA      |
 | RF-007 | Permitir que o aluno visualize seu plano.                      | MÉDIA      |
 | RF-008 | Permitir que o recepcionista visualize o plano de cada aluno. | ALTA       |
-| RF-009 | Permitir que a recepcionaista faça a matrícula dos alunos.               | ALTA       |
+| RF-009 | Permitir que a recepcionista faça a matrícula dos alunos.               | ALTA       |
 | RF-010 | Permitir que o aluno marque aulas com os treinadores disponíveis. | MÉDIA      |
-| RF-011 | Permitir que o aluno visualize o horário de funcionamento.              | MÉDIA      |
+| RF-011 | Permitir que o aluno visualize os dias em que foi treinar.              | MÉDIA      |
 | RF-012 | Permitir que o usuário entre em sua conta com um login simples (e-mail e senha). | ALTA       |
 
 
@@ -127,10 +127,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|ID| Restrição                                                                 |
+|--|---------------------------------------------------------------------------|
+|01| O projeto deverá ser entregue até o final do semestre letivo              |
+|02| O sistema deve ser desenvolvido exclusivamente pelos integrantes do grupo |
+|03| O sistema deve ser compatível com dispositivos móveis                     |
+|04| O projeto deve ser desenvolvido com ferramentas e tecnologias gratuitas   |
+|05| O sistema deve possuir uma interface simples e de fácil utilização        |
+
 
 ## Diagrama de Casos de Uso
 
