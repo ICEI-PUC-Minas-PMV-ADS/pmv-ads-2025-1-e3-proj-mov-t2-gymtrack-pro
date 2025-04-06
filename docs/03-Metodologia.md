@@ -23,10 +23,10 @@ foi utilizado para hospedagem do repositório.
 
 O projeto segue a seguinte convenção para o nome de branches:
 
-- `main`: versão estável já testada do software
-- `staging`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
+- `main`: versão estável já testada do software e em produção.
+- `staging`: versão já testada do software, porém instável mas indicara para release.
 - `develop`: versão de desenvolvimento do software
+- `fetura/*`: branch de trabalho do desenvolvedor sobre uma funcionalidade.
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
