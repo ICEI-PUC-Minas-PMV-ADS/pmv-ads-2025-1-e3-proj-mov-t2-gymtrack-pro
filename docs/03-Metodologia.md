@@ -3,7 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+O grupo adotou a metodologia ágil Scrum para organizar o desenvolvimento do projeto, com sprints semanais e divisão clara de tarefas entre os membros. A equipe utiliza o recurso GitHub Projects para gerenciar as atividades, acompanhar o andamento do projeto e visualizar o status de cada tarefa em um quadro Kanban. A comunicação é feita principalmente pelo WhatsApp, para trocas rápidas, e pelo Microsoft Teams, usado para reuniões e organização mais estruturada. O código-fonte é armazenado e versionado no GitHub, permitindo o controle de alterações e a colaboração entre os integrantes. Foram definidos três ambientes principais: desenvolvimento, homologação e produção, garantindo uma estrutura organizada e segura para testes, validações e publicação da aplicação. Essa abordagem permite que o time trabalhe de forma colaborativa, ágil e com foco na entrega contínua de valor.
 
 ## Relação de Ambientes de Trabalho
 
@@ -71,28 +71,16 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+O grupo está utilizando a metodologia ágil Scrum para organizar o desenvolvimento do projeto. As atividades são divididas em sprints semanais, com definição de tarefas e acompanhamento do progresso ao longo do tempo. Para gerenciar essas tarefas e monitorar o andamento do projeto, está sendo utilizado o recurso GitHub Projects, que permite organizar as atividades em um quadro Kanban. Dessa forma, é possível visualizar facilmente o status de cada tarefa, facilitar a comunicação entre os membros da equipe e manter o controle do desenvolvimento da solução de forma centralizada.
+![image](https://github.com/user-attachments/assets/91b863a7-2f14-4d02-b0ff-8a41623cf9b2)
 
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
-
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
-
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+| Categoria               | Ferramenta         | Justificativa                                                               |
+|------------------------|--------------------|-----------------------------------------------------------------------------|
+| Editor de Código        | Visual Studio Code | Integração com Git, leve, extensível e amplamente utilizado                |
+| Controle de Versão      | GitHub             | Armazenamento do código, versionamento e colaboração entre a equipe        |
+| Comunicação             | WhatsApp           | Comunicação rápida e prática no dia a dia                                  |
+| Comunicação             | Microsoft Teams    | Organização de reuniões e arquivos, integração com ferramentas da Microsoft|
+| Desenho de Tela         | Figma              | Ferramenta online e colaborativa, ideal para wireframes e protótipos       |
+| Diagramas               | Lucidchart         | Criação de diagramas de forma visual e intuitiva, ideal para documentação   |
