@@ -165,9 +165,15 @@ O gerenciamento ocorrerá de maneira integrada, compreendendo que alterações e
 
 ## Gerenciamento de Tempo
 
-## Gerenciamento de Tempo
-
 O gerenciamento de tempo será realizado utilizando ferramentas tradicionais como o Diagrama de Rede e o Gráfico de Gantt.
+
+### Diagrama de Rede
+
+Será utilizado para visualizar claramente as tarefas, identificar dependências e definir o caminho crítico para o projeto. Utilizará a notação francesa pela clareza na representação gráfica das atividades e dependências.
+
+- **Identificação das tarefas:** Definir e descrever claramente cada atividade necessária.
+- **Dependências entre tarefas:** Indicar claramente quais atividades são dependentes umas das outras para evitar bloqueios.
+- **Caminho Crítico:** Monitoramento constante das tarefas críticas, garantindo o cumprimento dos prazos.
 
 
 ## Gerenciamento de Equipe
