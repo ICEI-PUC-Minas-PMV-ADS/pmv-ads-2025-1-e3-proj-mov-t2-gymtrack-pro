@@ -1,6 +1,6 @@
 # Introdução
 
-O mercado fitness tem apresentado um crescimento notável nos últimos anos, motivado pela crescente busca por qualidade de vida e bem-estar. Para atender a essa demanda, as academias necessitam de sistemas eficazes para gerenciar seus clientes e serviços. Este projeto sugere a criação de um software para academias, com ênfase no cadastro e gerenciamento de usuários, possibilitando um controle mais organizado e ágil das informações.
+O mercado fitness tem apresentado um crescimento expressivo nos últimos anos, impulsionado pela busca crescente por qualidade de vida e bem-estar. Para acompanhar essa demanda, as academias precisam de sistemas eficazes para gerenciar clientes e serviços. Este projeto propõe a criação de um software voltado para academias, com foco no cadastro e gerenciamento de usuários, oferecendo um controle mais organizado, ágil e confiável das informações.
 
 ## Problema
 
