@@ -83,12 +83,13 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
-
-Usar o seguinte modelo: 
-
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+| Nº | INDICADOR                          | OBJETIVOS                                                | DESCRIÇÃO                                                                 | CÁLCULO                                                                            | FONTE DE DADOS                               | PERSPECTIVA  |
+|----|------------------------------------|----------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------------|------------------------------------------------|--------------|
+| 1  | TEMPO MÉDIO PARA CADASTRO          | Reduzir o tempo gasto no processo de cadastramento       | Tempo médio que um funcionário leva para cadastrar um aluno               | Tempo total para cadastro manual / digital ÷ nº de cadastros                      | Observação direta e testes no sistema         | Processo     |
+| 2  | ECONOMIA OPERACIONAL               | Avaliar o impacto do sistema na redução de custos        | Compara o custo do processo manual com o custo do processo digital        | (Custo manual - Custo digital) / Custo manual × 100                               | Relatórios financeiros e operacionais         | Negócios     |
+| 3  | TAXA DE SATISFAÇÃO DO USUÁRIO      | Medir a satisfação dos alunos com o sistema              | Percentual de alunos satisfeitos com o uso do sistema                     | Nº de alunos satisfeitos / Nº total de alunos pesquisados × 100                  | Formulário de feedback dos usuários           | Cliente      |
+| 4  | TAXA DE ERROS NO CADASTRO          | Reduzir falhas no preenchimento de dados                 | Percentual de cadastros com erros (campos faltando, dados inválidos etc.) | Nº de cadastros com erro / Nº total de cadastros × 100                           | Banco de dados do sistema                     | Qualidade    |
+| 5  | TEMPO DE ACESSO ÀS INFORMAÇÕES     | Melhorar a eficiência na consulta de dados do aluno      | Tempo médio para acessar informações como plano e matrícula               | Soma dos tempos de acesso / Nº de acessos                                         | Logs do sistema                               | Técnico     |
 
 ## Requisitos
 
