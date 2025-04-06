@@ -17,9 +17,9 @@ Para atingir esse objetivo, foram definidos dois objetivos específicos:
 
 ## Justificativa
 
-Este projeto tem como objetivo modernizar a gestão de academias, trocando métodos manuais por um sistema eficiente que facilite o cadastro e o acesso às informações dos usuários. Muitos estabelecimentos enfrentam dificuldades com sistemas desatualizados, o que prejudica a organização e a experiência dos alunos.
+A proposta deste projeto busca modernizar a gestão de academias, substituindo processos manuais por um sistema eficiente e digitalizado. Muitos estabelecimentos ainda enfrentam dificuldades devido ao uso de ferramentas desatualizadas, o que impacta negativamente na organização interna e na experiência dos alunos.
 
-Os objetivos específicos foram definidos para garantir um cadastro seguro e acessível, além de uma interface intuitiva que ofereça facilidade de uso tanto para a administração quanto para os alunos. A pesquisa pode incluir entrevistas com gestores e alunos para compreender melhor as necessidades e limitações dos sistemas atuais.
+A definição dos objetivos específicos visa garantir um cadastro seguro e acessível, além de uma interface amigável tanto para a administração quanto para os alunos. A pesquisa poderá incluir entrevistas com gestores e usuários para compreender melhor as necessidades e limitações dos sistemas atualmente utilizados.
 
 ## Público-Alvo
 
