@@ -60,7 +60,10 @@ etiquetas:
 
 ### Processo
 
-O grupo está utilizando a metodologia ágil Scrum para organizar o desenvolvimento do projeto. As atividades são divididas em sprints semanais, com definição de tarefas e acompanhamento do progresso ao longo do tempo. Para gerenciar essas tarefas e monitorar o andamento do projeto, está sendo utilizado o recurso GitHub Projects, que permite organizar as atividades em um quadro Kanban. Dessa forma, é possível visualizar facilmente o status de cada tarefa, facilitar a comunicação entre os membros da equipe e manter o controle do desenvolvimento da solução de forma centralizada.
+O grupo está adotando a metodologia ágil Scrum para organizar o desenvolvimento do projeto. As atividades são distribuídas em sprints semanais, com definição clara de tarefas e acompanhamento contínuo do progresso. Para o gerenciamento dessas tarefas e o monitoramento do andamento do projeto, está sendo utilizado o recurso GitHub Projects, estruturado em um quadro Kanban.
+
+Essa abordagem permite visualizar facilmente o status de cada atividade, facilita a comunicação entre os membros da equipe e centraliza o controle sobre o desenvolvimento da solução.
+
 ![image](https://github.com/user-attachments/assets/dfaa5d3c-4a06-4536-aee2-96e3c319a489)
 
 
