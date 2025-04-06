@@ -4,7 +4,7 @@ O mercado fitness tem apresentado um crescimento expressivo nos últimos anos, i
 
 ## Problema
 
-Muitas academias ainda dependem de métodos manuais ou sistemas ultrapassados para gerenciar o cadastro de usuários, o que pode causar dificuldades na organização dos dados, atrasos no atendimento e falta de praticidade para os alunos acessarem suas informações. A ausência de um sistema eficiente pode prejudicar a experiência dos usuários e a gestão da academia, tornando os processos mais lentos e propensos a erros.
+Atualmente, muitas academias ainda utilizam métodos manuais ou sistemas obsoletos para gerenciar o cadastro de usuários. Essa abordagem pode gerar dificuldades na organização dos dados, atrasos no atendimento e falta de praticidade para os alunos acessarem suas informações. A ausência de um sistema eficiente compromete a experiência dos usuários e a gestão da academia, tornando os processos mais lentos e propensos a falhas.
 
 ## Objetivos
 
