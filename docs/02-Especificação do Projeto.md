@@ -167,4 +167,5 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 ## Gestão de Orçamento
 
-O desenvolvimento do sistema está sendo realizado sem custos financeiros diretos. O projeto utiliza ferramentas gratuitas e recursos disponíveis pelos membros da equipe, sem a necessidade de investimentos adicionais em infraestrutura, licenças de software ou mão de obra contratada. Dessa forma, não há um orçamento formal a ser gerenciado, apenas o controle de tempo e esforço dos envolvidos.
+![image](https://github.com/user-attachments/assets/b4d9f100-2bd0-4ac5-9a83-99a39e01321d)
+
