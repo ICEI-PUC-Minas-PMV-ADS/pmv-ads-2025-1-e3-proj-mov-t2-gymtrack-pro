@@ -179,6 +179,11 @@ Será utilizado para visualizar claramente as tarefas, identificar dependências
 
 Ferramenta visual essencial para controlar o cronograma, mostrando as datas previstas de início e fim para cada tarefa, facilitando o acompanhamento contínuo do progresso do projeto.
 
+- **Listagem clara das atividades:** Descrição detalhada das atividades e principais marcos.
+- **Estimativa realista dos tempos:** Cada atividade terá tempo estimado com base na capacidade produtiva da equipe.
+- **Monitoramento semanal:** Revisão periódica para garantir o cumprimento do cronograma estabelecido.
+
+Dessa forma, a equipe terá controle total sobre o andamento do projeto, garantindo entregas organizadas e pontuais.
 
 ## Gerenciamento de Equipe
 
