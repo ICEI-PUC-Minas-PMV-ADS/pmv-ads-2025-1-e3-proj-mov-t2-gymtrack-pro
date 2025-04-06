@@ -155,6 +155,14 @@ O gerenciamento ocorrerá de maneira integrada, compreendendo que alterações e
 
 ### Áreas Prioritárias:
 
+- **Integração:** Reuniões periódicas para assegurar alinhamento e coerência entre os diversos aspectos do projeto e objetivos estratégicos.
+- **Escopo:** Controle rigoroso das funcionalidades, garantindo a entrega completa dos requisitos essenciais antes de aceitar novas demandas.
+- **Cronograma:** Acompanhamento semanal utilizando ferramentas como gráfico de Gantt para manter as entregas dentro do prazo.
+- **Qualidade:** Testes regulares para garantir o cumprimento dos requisitos funcionais e não funcionais definidos.
+- **Comunicação:** Comunicação frequente e clara com todas as partes interessadas por meio de relatórios semanais de progresso.
+- **Partes Interessadas:** Engajamento ativo e constante comunicação com stakeholders (administradores, clientes e equipe de desenvolvimento).
+
+
 ## Gerenciamento de Tempo
 
 Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
