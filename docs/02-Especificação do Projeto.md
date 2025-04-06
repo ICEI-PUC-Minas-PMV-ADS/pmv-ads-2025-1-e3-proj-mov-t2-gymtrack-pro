@@ -63,23 +63,87 @@
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Problemas Identificados:
+
+  Métodos Manuais ou Obsoletos:
+  Muitas academias utilizam anotações em papel ou sistemas desatualizados para gerenciar o cadastro dos usuários e de atividades, o que dificulta o controle e a atualização dos dados.
+  
+  Organização e Acessibilidade dos Dados:
+  A ausência de um sistema integrado resulta em informações dispersas, dificultando o acesso rápido e seguro tanto para a administração quanto para os alunos.
+  
+  Atrasos no Atendimento:
+  Processos manuais podem causar lentidão no cadastro e atualização de informações, impactando negativamente a experiência dos usuários.
+  
+  Riscos de Erros e Falhas:
+  A manipulação manual dos dados aumenta a possibilidade de erros, como cadastros duplicados ou informações incorretas, comprometendo a eficiência da gestão.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+Resumo da Proposta:
 
-### Processo 1 – NOME DO PROCESSO
+  O projeto propõe o desenvolvimento de um aplicativo móvel para academias que visa modernizar e otimizar a gestão dos cadastros de usuários e de treinos executados pelos alunos. A ferramenta será voltada tanto para a administração (que terá um sistema seguro para armazenamento e gerenciamento dos dados) quanto para os alunos (que terão acesso fácil e intuitivo às suas informações e seus treinos).
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+Limites e Conexões com a Estratégia de Negócio:
 
-![Processo 1](img/02-bpmn-proc1.png)
+  Limites:
+  O sistema focará inicialmente na gestão de cadastros e atualização de informações do usuário e de seus treinos. Funcionalidades extras, como agendamento de aulas ou controle de pagamentos, poderão ser implementadas em fases posteriores, de acordo com a evolução e as necessidades do negócio.
 
-### Processo 2 – NOME DO PROCESSO
+Estratégia e Objetivos:
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
+Objetivo Principal: Resolver os desafios atuais na gestão das academias, proporcionando agilidade e segurança para a academia e seus usuários.
 
-![Processo 2](img/02-bpmn-proc2.png)
+Objetivos Específicos:
+
+  Implementar um sistema que centralize os dados dos usuários.
+  
+  Desenvolver uma interface intuitiva que facilite a visualização e a interatividade dos alunos.
+  
+Oportunidades de Melhoria:
+
+  Automatização dos Processos:
+  Eliminar etapas manuais por meio da automação, reduzindo erros e aumentando a eficiência.
+  
+  Acesso em Tempo Real:
+  Permitir que tanto a administração quanto os alunos tenham acesso instantâneo às informações, promovendo uma experiência mais dinâmica e interativa.
+  
+  Segurança dos Dados:
+  Implantar práticas de segurança modernas para proteger os dados sensíveis dos usuários, garantindo conformidade com as melhores práticas e legislações vigentes.
+
+### Processo 1 – Cadastro e Gestão de Usuários
+
+Nome do Processo: Cadastro e Gestão de Usuários
+
+Oportunidades de Melhoria Identificadas:
+
+  Centralização de Dados:
+  Transição de sistemas manuais ou desconexos para uma base única e integrada.
+  
+  Automação do Fluxo de Cadastro:
+  Implementar etapas automatizadas que reduzam a intervenção manual e, consequentemente, erros e atrasos.
+  
+  Interface Amigável e Responsiva:
+  Desenvolver uma interface intuitiva para que os usuários possam atualizar suas informações de forma autônoma e segura.
+
+  ![image](https://github.com/user-attachments/assets/c0f9dd89-c6e3-4c0c-b46d-fe7f028d4ad0)
+
+
+### Processo 2 – Acesso e Atualização da Ficha de Treino
+
+Nome do Processo: Acesso e Atualização da Ficha de Treino
+
+Oportunidades de Melhoria:
+
+  Atualização em Tempo Real:
+  Permitir que o profissional acompanhe e atualize as informações dos treinos conforme a evolução dos alunos, garantindo maior precisão nos dados.
+  
+  Comunicação Direta:
+  Facilitar a interação entre o profissional e o aluno, possibilitando feedbacks e ajustes rápidos no plano de treino.
+  
+  Gestão unificada do usuário:
+  Vincular a ficha de treino com o cadastro dos usuários, centralizando informações e facilitando a gestão geral da academia.
+
+  ![image](https://github.com/user-attachments/assets/eb9c1c5a-fa88-42de-908c-dccbc4ebe618)
+
 
 ## Indicadores de Desempenho
 
