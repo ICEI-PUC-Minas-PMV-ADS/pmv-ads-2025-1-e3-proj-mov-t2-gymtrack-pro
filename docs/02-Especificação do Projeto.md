@@ -143,7 +143,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Matriz de Rastreabilidade
 
-![image](https://github.com/user-attachments/assets/efeffbbc-75bc-49b5-bc78-cc1adfbedf5a)
+![matriz_rastreabilidade_completa](https://github.com/user-attachments/assets/4d36d027-a9cb-44be-81de-5feb2926632d)
+
 
 # Gerenciamento de Projeto
 
