@@ -1,0 +1,405 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "GymTrack API",
+    "version": "1.0.0",
+    "description": "API para gerenciamento de academia (GymTrack)"
+  },
+  "servers": [
+    { "url": "/api/v1" }
+  ],
+  "paths": {
+    "/auth/login": {
+      "post": {
+        "summary": "Autenticar usuário (JWT)",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": { "type": "string" },
+                  "password": { "type": "string" }
+                },
+                "required": ["email", "password"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Token JWT gerado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "token": { "type": "string" },
+                    "user": { "$ref": "#/components/schemas/User" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users": {
+      "post": {
+        "summary": "Criar (matricular) novo usuário",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/User" }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Usuário criado",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/UserCreated" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users/{id}": {
+      "put": {
+        "summary": "Atualizar dados de qualquer usuário",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/User" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Usuário atualizado",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/UserUpdated" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users/me": {
+      "get": {
+        "summary": "Ver meu próprio perfil",
+        "responses": {
+          "200": {
+            "description": "Perfil do usuário",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/User" }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Atualizar meu próprio perfil",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/User" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Perfil atualizado",
+            "content": {
+              "application/json": {
+                "schema": { "type": "object", "properties": { "message": { "type": "string" } } }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/plans": {
+      "get": {
+        "summary": "Listar todos os planos de treino",
+        "responses": {
+          "200": {
+            "description": "Lista de planos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "plans": {
+                      "type": "array",
+                      "items": { "$ref": "#/components/schemas/Plan" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/plans/{id}": {
+      "put": {
+        "summary": "Editar um plano de treino",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Plan" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Plano atualizado",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/PlanUpdated" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users/{id}/plan": {
+      "get": {
+        "summary": "Consultar plano atribuído a um usuário",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "Plano do usuário",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "userId": { "type": "string" },
+                    "plan": { "$ref": "#/components/schemas/Plan" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users/{id}/routines": {
+      "get": {
+        "summary": "Listar fichas de treino do usuário",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de fichas de treino",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "userId": { "type": "string" },
+                    "routines": {
+                      "type": "array",
+                      "items": { "$ref": "#/components/schemas/Routine" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Criar nova ficha de treino para o usuário",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Routine" }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Ficha criada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "userId": { "type": "string" },
+                    "routineId": { "type": "integer" },
+                    "message": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users/{id}/goals": {
+      "put": {
+        "summary": "Atualizar meta mensal de treinos do usuário",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "goal": { "type": "integer" }
+                },
+                "required": ["goal"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Meta atualizada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "userId": { "type": "string" },
+                    "goal": { "type": "integer" },
+                    "message": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reports/financial": {
+      "get": {
+        "summary": "Obter relatório financeiro mensal",
+        "parameters": [
+          { "name": "month", "in": "query", "required": true, "schema": { "type": "string", "example": "2024-06" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "Relatório financeiro mensal",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/FinancialReport" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "name": { "type": "string" },
+          "email": { "type": "string" },
+          "role": { "type": "string" },
+          "active": { "type": "boolean" }
+        }
+      },
+      "UserCreated": {
+        "allOf": [
+          { "$ref": "#/components/schemas/User" },
+          {
+            "type": "object",
+            "properties": {
+              "message": { "type": "string" }
+            }
+          }
+        ]
+      },
+      "UserUpdated": {
+        "allOf": [
+          { "$ref": "#/components/schemas/User" },
+          {
+            "type": "object",
+            "properties": {
+              "message": { "type": "string" }
+            }
+          }
+        ]
+      },
+      "Plan": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "name": { "type": "string" },
+          "price": { "type": "number" },
+          "duration": { "type": "string" }
+        }
+      },
+      "PlanUpdated": {
+        "allOf": [
+          { "$ref": "#/components/schemas/Plan" },
+          {
+            "type": "object",
+            "properties": {
+              "message": { "type": "string" }
+            }
+          }
+        ]
+      },
+      "Routine": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "name": { "type": "string" },
+          "exercises": { "type": "integer" }
+        }
+      },
+      "FinancialReport": {
+        "type": "object",
+        "properties": {
+          "month": { "type": "string" },
+          "revenue": { "type": "number" },
+          "expenses": { "type": "number" },
+          "profit": { "type": "number" },
+          "details": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string" },
+                "value": { "type": "number" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
