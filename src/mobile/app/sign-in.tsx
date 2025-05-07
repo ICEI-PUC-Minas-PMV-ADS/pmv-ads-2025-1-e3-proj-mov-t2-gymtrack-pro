@@ -4,6 +4,7 @@ import style  from './styles';
 import { MaterialIcons } from '@expo/vector-icons';
 import { useState } from 'react';
 import { Input } from '@/components/input';
+import { router } from 'expo-router';
 
 export default function SignIn() {
   const { login } = useAuth();
@@ -57,7 +58,9 @@ export default function SignIn() {
           <Text style={style.TextButton}>Conectar</Text>
         </TouchableOpacity>
       </View>
-      <Text style={style.TextFinal}>Largue a preguiça cadastre-se ja!</Text>
+      <TouchableOpacity onPress={() => router.push('/sign-up')}>
+        <Text style={style.TextFinal}>Largue a preguiça cadastre-se ja!</Text>
+      </TouchableOpacity>
     </View>
   );
 }

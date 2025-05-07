@@ -62,6 +62,33 @@ const style = StyleSheet.create ({
     TextFinal:{
         fontSize: 16,
         color: themas.colors.primary,
+    },
+    errorText: {
+        color: 'red',
+        marginTop: 8,
+        textAlign: 'center',
+        marginBottom: 10
+    },
+    scrollView: {
+        width: '100%',
+        flex: 1
+    },
+    scrollViewContentContainer: {
+        alignItems: 'center',
+        paddingBottom: 20
+    },
+    formInputWrapper: {
+        width: '100%',
+        paddingHorizontal: 37,
+        marginTop: 20
+    },
+    formButtonWrapper: {
+        width: '100%',
+        alignItems: 'center',
+        marginTop: 30
+    },
+    signInLink: {
+        marginTop: 30
     }
 })
 
