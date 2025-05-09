@@ -66,6 +66,25 @@ membros do grupo;
 
 ### Processo
 
+Com o objetivo de tornar o processo mais eficiente e organizado, decidimos utilizar o GitHub como ferramenta para distribuir e acompanhar as tarefas entre os membros do grupo. As atividades foram categorizadas da seguinte forma: Backlog: Representa todas as tarefas que precisam ser realizadas ao longo do desenvolvimento do projeto;
+
+Ready: Tarefas que foram selecionadas do backlog e estão prontas para serem desenvolvidas durante a sprint;
+
+In Progress: Tarefas que já estão em desenvolvimento pela equipe;
+
+In Review: Tarefas finalizadas que estão em processo de revisão, aguardando validação ou feedback;
+
+Correction: Tarefas que passaram pela revisão e precisam de ajustes ou correções antes de serem concluídas;
+
+Done: Tarefas totalmente finalizadas, revisadas e aprovadas, prontas para entrega ou já implementadas.
+
+O quadro Kanban desenvolvido pelo grupo pode ser acessado clicando [aqui](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1968/views/1). Abaixo, é possível ver uma representação dele.
+
+ ![Captura_de_tela_de_2025-05-09_20-09-33](https://github.com/user-attachments/assets/c464d794-6ed2-431a-87b6-2bee1509ab89)
+
+
+
+
 O grupo está adotando a metodologia ágil Scrum para organizar o desenvolvimento do projeto. As atividades são distribuídas em sprints semanais, com definição clara de tarefas e acompanhamento contínuo do progresso. Para o gerenciamento dessas tarefas e o monitoramento do andamento do projeto, está sendo utilizado o recurso GitHub Projects, estruturado em um quadro Kanban.
 
 Essa abordagem permite visualizar facilmente o status de cada atividade, facilita a comunicação entre os membros da equipe e centraliza o controle sobre o desenvolvimento da solução.
