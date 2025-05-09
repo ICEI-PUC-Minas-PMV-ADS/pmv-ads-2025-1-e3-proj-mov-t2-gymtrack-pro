@@ -5,16 +5,15 @@ O grupo adotou a metodologia ágil Scrum para organizar o desenvolvimento do pro
 
 ## Relação de Ambientes de Trabalho
 
-| Ambiente            | Plataforma        | Link de Acesso                       |
-|---------------------|-------------------|--------------------------------------|
-| Desenvolvimento     |     Local         |              Localmente              |
-| Homologação         |   Vercel          | [Vercel Stating](vercel.com)         |
-| Produção            |   Vercel          |  [Vercel Production](vercel.com)     |
-| Repositório Git     | GitHub            |[Gymtruck-Pro repo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e3-proj-mov-t2-gymtrack-pro)|
-| Desenvolvimento Móvel |  Local          |              Localmente              |
-| Testes              | GitHub            |[GitHub Actions](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e3-proj-mov-t2-gymtrack-pro/actions/new)|
-| API Backend         |   Vercel          |[Vercel Production](vercel.com)                 |
-
+| AMBIENTE | PLATAFORMA | LINK DE ACESSO | DESCRIÇÃO
+|------------|---------------| ----------- |--------------- |
+| Repositório de Código | GitHub | [Repositorio do projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e3-proj-mov-t2-gymtrack-pro) | Hospedagem do código fonte do projeto, com versionamento e controle de branches. |
+| Gestão de Tarefas | GitHub | [Quadro Kanban](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1968/views/1) | Quadro Kanban para organização das tarefas do projeto. |
+| Comunicação | Discord | [Canal de Comunicação](https://discord.com/channels/1159300798967201855/1159300799537631334) | Comunicação da equipe em canais específicos para discussões técnicas e gerais. |
+| Design de Interfaces | Figma |[Projeto do Figma](https://www.figma.com/design/KewUNUxrZ0W4zBahBr3R6U/vitor.andrade.1497790-s-team-library?node-id=0-1&p=f&t=kATT6cUnB6ttBX2T-0) | Prototipagem e design das interfaces do aplicativo móvel. |
+| Hospedagem | --- | [Hospedagem do Projeto]() |Hospedagem do backend e frontend projeto, além do Banco de Dados. |
+|Banco de Dados| --- | [Banco de Dados]() | Banco de dados em tempo real e autenticação para aplicativos móveis. |
+| Desenvolvimento Mobile | Expo | [Dev Mobile]() | IDE para desenvolvimento de aplicativos, com emuladores e ferramentas de debug. |
 ## Controle de Versão
 
 A ferramenta de controle de versão adotada no projeto foi o
@@ -31,10 +30,17 @@ O projeto segue a seguinte convenção para o nome de branches:
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
 
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
+- `documentation`: melhorias ou acréscimos à documentação;
+- `bug`: uma funcionalidade encontra-se com problemas;
+- `enhancement`: uma funcionalidade precisa ser melhorada;
+- `feature`: uma nova funcionalidade precisa ser introduzida;
+- `Design`: Criação do modelo feito no figma;
+- `Help Wanted`: Sinalização de um problema que exige maior atenção por parte dos 
+membros do grupo;
+- `Question`: Requisição de mais informações para que a tarefa possa ser concluída;
+- `Figma`: telas do site/esboços;
+- `Tests`: testes das páginas feitas;
+- `Wontfix`: não será trabalhado.
 
 
 ## Gerenciamento de Projeto
