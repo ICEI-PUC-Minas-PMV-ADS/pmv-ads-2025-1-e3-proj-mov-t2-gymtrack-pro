@@ -81,11 +81,21 @@ Essa abordagem permite visualizar facilmente o status de cada atividade, facilit
 
 ### Ferramentas
 
-| Categoria               | Ferramenta         | Justificativa                                                               |
-|------------------------|--------------------|-----------------------------------------------------------------------------|
-| Editor de Código        | Visual Studio Code | Integração com Git, leve, extensível e amplamente utilizado                |
-| Controle de Versão      | GitHub             | Armazenamento do código, versionamento e colaboração entre a equipe        |
-| Comunicação             | WhatsApp           | Comunicação rápida e prática no dia a dia                                  |
-| Comunicação             | Microsoft Teams    | Organização de reuniões e arquivos, integração com ferramentas da Microsoft|
-| Desenho de Tela         | Figma              | Ferramenta online e colaborativa, ideal para wireframes e protótipos       |
-| Diagramas               | Lucidchart         | Criação de diagramas de forma visual e intuitiva, ideal para documentação   |
+As ferramentas utilizadas ao longo do projeto são:
+
+- Editor de código;
+- Ferramentas de comunicação;
+- Ferramentas de design;
+- Ferramentas de diagramação.
+
+A escolha do editor de código foi motivada pelo impacto direto no controle de versionamento do projeto, garantindo rastreabilidade e organização no desenvolvimento. Além disso, o uso de ferramentas de comunicação, tanto para troca de mensagens instantâneas quanto para reuniões diárias, tornou-se essencial para promover a integração e o alinhamento entre os membros da equipe. Para a etapa de design, ferramentas específicas foram utilizadas na prototipação inicial da solução, permitindo a edição simultânea por um ou mais integrantes, o que favoreceu a colaboração e agilidade no processo criativo. Por fim, uma ferramenta de diagramação foi selecionada para mapear as necessidades do produto, proporcionando uma visão clara e estruturada do que está sendo desenvolvido. 
+
+| CATEGORIA | FERRAMENTA | JUSTIFICATIVA | 
+|------------|---------------| ----------- |
+| Editor de Código | VS Code | Escolhido por ser um editor leve, altamente personalizável e com suporte a extensões que aumentam a produtividade, como integração com Git, depuração e linting. |
+| Editor de código | Expo | Utilizado para desenvolvimento de aplicações mobile com React Native, oferecendo um ambiente de desenvolvimento simplificado, com hot reloading e acesso a APIs nativas sem necessidade de configuração complexa. |
+| Comunicação| Discord, WhatsApp, Microsoft Teams | Facilidade de uso e colaboração em tempo real. |
+| Controle de Versão | Git e Github | Padrão da indústria e facilidade de colaboração. |
+| Wireframing | Figma | Colaboração em tempo real e recursos avançados de prototipagem. |
+| Diagrama | Lucid app | Escolhido por ser uma ferramenta de diagramação colaborativa em tempo real, com uma interface intuitiva e suporte a diversos tipos de diagramas (fluxogramas, wireframes, UML, etc.). |
+| Diagrama | Merma Id | Utilizado para criação de diagramas diretamente em arquivos Markdown, permitindo versionamento junto com o código e integração em documentações técnicas. |
