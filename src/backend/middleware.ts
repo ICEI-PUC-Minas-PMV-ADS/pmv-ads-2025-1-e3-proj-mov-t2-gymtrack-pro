@@ -24,6 +24,11 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // Libera o acesso ao endpoint /api/swagger.json
+  if (pathname === '/api/docs/swagger') {
+    return NextResponse.next();
+  }
+
   // Obtém o token de autorização do cabeçalho
   const authHeader = request.headers.get('authorization');
   
