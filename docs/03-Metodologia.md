@@ -64,6 +64,13 @@ O grupo está adotando a metodologia ágil Scrum para organizar o desenvolviment
 
 Essa abordagem permite visualizar facilmente o status de cada atividade, facilita a comunicação entre os membros da equipe e centraliza o controle sobre o desenvolvimento da solução.
 
+| Semana       | Atividades Realizadas na Etaoa 3                                                                                                                                                                                                                                                                          | Responsável      |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+| 9ª semana    | - Programação de funcionalidades<br>- Criação do modelo físico do banco de dados<br>- Criação de scripts SQL de DML<br>- Desenvolvimento das funcionalidades das telas principais                                                                                                                         | Thiago, Álvaro e João        |
+| 10ª semana   | - Continuação da programação de funcionalidades<br>- Implementação dos CRUDs<br>- Implementação do sistema de autenticação<br>- Aplicação de padrões de projeto na codificação<br>- Evidências de implementação das funcionalidades de CRUD e autenticação                                    |  Thiago, Álvaro e João        |
+| 11ª semana   | - Continuação da programação de funcionalidades<br>- Melhorias nos CRUDs e autenticação<br>- Adoção de padrões de projeto<br>- Registro de evidências de implementação<br>- Atualização do quadro visual de gestão de trabalho<br>- Status atual das contribuições e comentários individuais |  Vitor, Beatriz, Ana e Eduardo        |
+| 12ª semana   | - Finalização da programação de funcionalidades<br>- Evidências consolidadas de CRUDs e autenticação<br>- Atualização do quadro visual de gestão de trabalho e participação do time<br>- Elaboração dos planos de testes de funcionalidades e usabilidade<br>- Início dos testes registrados     |  Vitor, Beatriz, Ana e Eduardo        |
+| 13ª semana   | Planos de testes de funcionalidades e usabilidade<br>- Registros completos dos testes realizados nas funcionalidades principais e na experiência de uso                                                                                                                       |  Vitor, Beatriz, Ana e Eduardo        |
 
 
 ### Ferramentas
