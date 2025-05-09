@@ -36,11 +36,32 @@
                   "type": "object",
                   "properties": {
                     "token": { "type": "string" },
-                    "user": { "$ref": "#/components/schemas/User" }
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "integer" },
+                        "name": { "type": "string" },
+                        "email": { "type": "string" },
+                        "role": { "type": "string" },
+                        "goal": { "type": "integer" }
+                      }
+                    }
                   }
                 }
               }
             }
+          },
+          "400": {
+            "description": "Campos obrigatórios",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+          },
+          "401": {
+            "description": "Credenciais inválidas",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+          },
+          "500": {
+            "description": "Erro ao conectar ao banco de dados",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
           }
         }
       }
@@ -52,7 +73,16 @@
           "required": true,
           "content": {
             "application/json": {
-              "schema": { "$ref": "#/components/schemas/User" }
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "email": { "type": "string" },
+                  "password": { "type": "string" },
+                  "goal": { "type": "integer" }
+                },
+                "required": ["name", "email", "password"]
+              }
             }
           }
         },
@@ -61,9 +91,32 @@
             "description": "Usuário criado",
             "content": {
               "application/json": {
-                "schema": { "$ref": "#/components/schemas/UserCreated" }
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "integer" },
+                        "name": { "type": "string" },
+                        "email": { "type": "string" },
+                        "role": { "type": "string" },
+                        "goal": { "type": "integer" }
+                      }
+                    },
+                    "token": { "type": "string" }
+                  }
+                }
               }
             }
+          },
+          "409": {
+            "description": "Email já cadastrado",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+          },
+          "500": {
+            "description": "Erro ao conectar ao banco de dados",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
           }
         }
       }
@@ -78,7 +131,15 @@
           "required": true,
           "content": {
             "application/json": {
-              "schema": { "$ref": "#/components/schemas/User" }
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "goal": { "type": "integer" },
+                  "password": { "type": "string" },
+                  "isActive": { "type": "boolean" }
+                }
+              }
             }
           }
         },
@@ -87,9 +148,31 @@
             "description": "Usuário atualizado",
             "content": {
               "application/json": {
-                "schema": { "$ref": "#/components/schemas/UserUpdated" }
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "integer" },
+                        "name": { "type": "string" },
+                        "email": { "type": "string" },
+                        "role": { "type": "string" },
+                        "goal": { "type": "integer" }
+                      }
+                    }
+                  }
+                }
               }
             }
+          },
+          "400": {
+            "description": "ID obrigatório ou nada para atualizar",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+          },
+          "500": {
+            "description": "Erro ao conectar ao banco de dados",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
           }
         }
       }
@@ -102,9 +185,35 @@
             "description": "Perfil do usuário",
             "content": {
               "application/json": {
-                "schema": { "$ref": "#/components/schemas/User" }
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "integer" },
+                        "name": { "type": "string" },
+                        "email": { "type": "string" },
+                        "role": { "type": "string" },
+                        "goal": { "type": "integer" }
+                      }
+                    }
+                  }
+                }
               }
             }
+          },
+          "401": {
+            "description": "Token não fornecido ou inválido",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+          },
+          "404": {
+            "description": "Usuário não encontrado",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+          },
+          "500": {
+            "description": "Erro ao conectar ao banco de dados",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
           }
         }
       },
@@ -114,7 +223,15 @@
           "required": true,
           "content": {
             "application/json": {
-              "schema": { "$ref": "#/components/schemas/User" }
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "goal": { "type": "integer" },
+                  "password": { "type": "string" },
+                  "isActive": { "type": "boolean" }
+                }
+              }
             }
           }
         },
@@ -123,9 +240,39 @@
             "description": "Perfil atualizado",
             "content": {
               "application/json": {
-                "schema": { "type": "object", "properties": { "message": { "type": "string" } } }
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "integer" },
+                        "name": { "type": "string" },
+                        "email": { "type": "string" },
+                        "role": { "type": "string" },
+                        "goal": { "type": "integer" }
+                      }
+                    }
+                  }
+                }
               }
             }
+          },
+          "400": {
+            "description": "Nada para atualizar",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+          },
+          "401": {
+            "description": "Token não fornecido ou inválido",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+          },
+          "404": {
+            "description": "Usuário não encontrado",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+          },
+          "500": {
+            "description": "Erro ao conectar ao banco de dados",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
           }
         }
       }
@@ -328,7 +475,8 @@
           "name": { "type": "string" },
           "email": { "type": "string" },
           "role": { "type": "string" },
-          "active": { "type": "boolean" }
+          "active": { "type": "boolean" },
+          "goal": { "type": "integer" }
         }
       },
       "UserCreated": {
