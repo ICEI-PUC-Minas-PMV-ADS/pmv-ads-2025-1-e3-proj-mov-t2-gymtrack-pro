@@ -71,7 +71,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         return false;
       }
       
-      return true;
+      const data = await response.json();
+      if (data.token) {
+        await AsyncStorage.setItem('userToken', data.token);
+        setIsAuthenticated(true);
+        await fetchUserProfile(data.token);
+        router.replace('/(app)');
+        return true;
+      }
+      return false;
 
     } catch (error) {
       console.error('Login error:', error);
