@@ -1,0 +1,24 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: gymtrack-pro-database
+    env_file:
+      - .env.local
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=postgres
+    ports:
+      - '5432:5432' 
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - my_network
+    
+volumes:
+  postgres_data:
+
+networks:
+  my_network:
+    name: my_network
+    driver: bridge
