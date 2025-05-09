@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   header: {
-    paddingTop: 60,
+    paddingTop: 20,
     paddingBottom: 20,
     alignItems: 'center',
     backgroundColor: themas.colors.primary,
@@ -186,7 +186,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   scrollViewContent: {
-    padding: 20,
+    paddingHorizontal: 20,
+    paddingTop: 20,      
+    paddingBottom: 100,   
   },
   formContainer: {
     width: '100%',
