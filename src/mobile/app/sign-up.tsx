@@ -12,6 +12,7 @@ export default function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [goal, setGoal] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState('');
@@ -28,7 +29,7 @@ export default function SignUp() {
     }
 
     try {
-      const success = await register(name, email, password);
+      const success = await register(name, email, password, goal);
       if (success) {
         Alert.alert('Sucesso!', 'Cadastro realizado com sucesso. Você pode fazer login agora.');
         router.replace('/sign-in');
@@ -74,6 +75,14 @@ export default function SignUp() {
             keyboardType='email-address'
             autoCapitalize='none'
             autoCorrect={false}
+          />
+          <Input
+            value={goal}
+            onChangeText={setGoal}
+            title="META (OPCIONAL)"
+            IconRight={MaterialIcons}
+            iconRightName="fitness-center"
+            placeholder="Ex: Ganhar massa muscular"
           />
           <Input
             value={password}

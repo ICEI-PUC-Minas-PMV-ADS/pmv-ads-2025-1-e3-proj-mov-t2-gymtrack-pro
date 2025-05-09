@@ -7,9 +7,8 @@ export const users = pgTable("users", {
   email: varchar("email", { length: 255 }).unique().notNull(),
   passwordHash: varchar("password_hash", { length: 255 }).notNull(),
   role: userRoleEnum("role").default("STUDENT").notNull(),
-  goal: text("goal"),
+  goal: text("goal").default(""),
   isActive: text("is_active").default("true").notNull(),
-  
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });

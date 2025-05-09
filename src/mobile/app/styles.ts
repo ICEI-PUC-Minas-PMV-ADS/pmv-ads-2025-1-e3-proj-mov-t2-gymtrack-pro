@@ -9,7 +9,7 @@ const style = StyleSheet.create ({
 
     },
     boxTop:{
-        height: Dimensions.get('window').height/3,
+        height: Dimensions.get('window').height/4,
         width: '100%',
         // backgroundColor: 'red',
         alignItems: 'center',
@@ -75,20 +75,22 @@ const style = StyleSheet.create ({
     },
     scrollViewContentContainer: {
         alignItems: 'center',
-        paddingBottom: 20
+        paddingBottom: 30,
+        paddingTop: 10
     },
     formInputWrapper: {
         width: '100%',
         paddingHorizontal: 37,
-        marginTop: 20
+        marginTop: 10
     },
     formButtonWrapper: {
         width: '100%',
         alignItems: 'center',
-        marginTop: 30
+        marginTop: 20
     },
     signInLink: {
-        marginTop: 30
+        marginTop: 20,
+        marginBottom: 30
     }
 })
 

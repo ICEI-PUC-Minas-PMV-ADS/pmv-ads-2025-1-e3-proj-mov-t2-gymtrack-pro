@@ -1,5 +1,5 @@
 import { useAuth } from '@/contexts/AuthContext';
-import { Text, View, Image, TouchableOpacity } from 'react-native';
+import { Text, View, Image, TouchableOpacity, ActivityIndicator } from 'react-native';
 import style  from './styles';
 import { MaterialIcons } from '@expo/vector-icons';
 import { useState } from 'react';
@@ -12,12 +12,27 @@ export default function SignIn() {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSignIn = async () => {
+    if (!email || !password) {
+      setError('Por favor, preencha todos os campos.');
+      return;
+    }
+    
     setError('');
-    const success = await login(email, password);
-    if (!success) {
-      setError('Email ou senha inválidos.');
+    setLoading(true);
+    
+    try {
+      const success = await login(email, password);
+      if (!success) {
+        setError('Email ou senha inválidos.');
+      }
+    } catch (e) {
+      console.error('Login error:', e);
+      setError('Ocorreu um erro ao tentar fazer login.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -54,8 +69,16 @@ export default function SignIn() {
         {error ? <Text style={{ color: 'red', marginTop: 8 }}>{error}</Text> : null}
       </View>
       <View style={style.boxbutton}>
-        <TouchableOpacity style={style.button} onPress={handleSignIn}>
-          <Text style={style.TextButton}>Conectar</Text>
+        <TouchableOpacity 
+          style={style.button} 
+          onPress={handleSignIn}
+          disabled={loading}
+        >
+          {loading ? (
+            <ActivityIndicator color="#fff" />
+          ) : (
+            <Text style={style.TextButton}>Conectar</Text>
+          )}
         </TouchableOpacity>
       </View>
       <TouchableOpacity onPress={() => router.push('/sign-up')}>
