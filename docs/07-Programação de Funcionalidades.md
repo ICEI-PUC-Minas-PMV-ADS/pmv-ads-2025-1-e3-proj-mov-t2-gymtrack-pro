@@ -1,15 +1,18 @@
 # Programação de Funcionalidades
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
+Essa tabela apresenta uma visão geral dos requisitos funcionais para um sistema de gestão de treinos e planos personalizados, com foco na interação entre administradores e alunos. O objetivo é garantir uma experiência fluida e intuitiva tanto para a administração do sistema quanto para os usuários finais, permitindo a personalização e controle das informações e atividades relacionadas aos treinos e planos de cada aluno. A tabela também define as responsabilidades de cada usuário, garantindo a segurança e eficiência no uso da plataforma.
 
-Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
-
-Para cada requisito funcional, pode ser entregue um artefato desse tipo
-
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+| ID     | Descrição do Requisito                                                                 | ARTEFATOS PRODUZIDOS | ALUNO(A) RESPONSÁVEL |
+|--------|------------------------------------------------------------------------------------------|-----------------------|----------------------|
+| RF-001 | Permitir que o ADM mude as fichas de treino disponíveis.                                | -                     |       THIAGO               |
+| RF-002 | Permitir que o ADM mude planos dos alunos.                                              | -                     |       ANA               |
+| RF-003 | Permitir que o aluno consulte suas informações de cadastro.                             | -                     |       EDUARDO               |
+| RF-004 | Permitir que o aluno mude sua meta de treinos mensais.                                  | -                     |       VITOR               |
+| RF-005 | Permitir que o aluno consulte suas fichas de treino.                                    | -                     |       RYUK               |
+| RF-006 | Permitir que o ADM edite as suas informações pessoais dos alunos.                       | -                     |       ALVARO               |
+| RF-007 | Permitir que o aluno visualize seu plano.                                               | -                     |       BEATRIZ               |
+| RF-008 | Permitir que o ADM visualize o plano de cada aluno.                                     | -                     |       THIAGO               |
+| RF-009 | Permitir que o ADM faça a matrícula dos alunos.                                         | -                     |       RYUK               |
+| RF-010 | Permitir que o aluno marque aulas com os treinadores disponíveis.                       | -                     |       ANA               |
+| RF-011 | Permitir que o aluno visualize os dias em que foi treinar.                              | -                     |       THIAGO               |
+| RF-012 | Permitir que o usuário entre em sua conta com um login simples (e-mail e senha).        | -                     |       VITOR               |
