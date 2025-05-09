@@ -2,7 +2,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Esta seção descreve a estrutura técnica da solução proposta, abrangendo desde a modelagem conceitual até a implementação física dos componentes. São apresentados o diagrama de classes, o modelo entidade-relacionamento (ER), o esquema relacional, além da arquitetura de hospedagem da aplicação. Também são detalhadas as tecnologias empregadas no desenvolvimento, ilustrando como elas se integram para atender aos requisitos do sistema.
 
 ![Arquitetura da Solução](img/02-mob-arch.png)
 
