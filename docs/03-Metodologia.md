@@ -97,12 +97,14 @@ Essa abordagem permite visualizar facilmente o status de cada atividade, facilit
 | 4ª semana | - Elaboração do cronograma de prazos do projeto  <br> - Estimativa de custos  <br> - Planejamento do gerenciamento de pessoal  <br> - Matriz de rastreabilidade de requisitos | Vitor, Ana e Beatriz |
 
 
+
 | Semana       | Atividades Realizadas na Etapa 2                                                                                                                                                                                                                                                                          | Responsável      |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
 | 5ª semana | - Metodologia e arquitetura da solução (Processos e suas Respectivas Atividades, BPMN, Tabelas, Gráficos ou Dashboards com no mínimo 5 indicadores de desempenho e metas para o processo de negócio)            | Eduardo e Álvaro         |
 | 6ª semana | - Arquitetura da Solução (Modelo ER; Esquema Relacional; Padronização de Qualidade de Produto) <br> - Projeto de interface (Diagrama de Fluxo de Navegação e Wireframes Interativos).                                                    | Ana, Thiago, Vitor e Ana    |
 | 7ª semana | -  Projeto de Interface (Diagrama de Fluxo de Navegação e Wireframes Interativos), <br> - Programação de Funcionalidades (Implementação de layouts de telas <br> - Quadro Visual Atual de Gestão de Trabalho no Github <br> - Status Atual das Contribuições dos Membros do Time no Github <br> - Comentários Adicionais sobre as Participações Individuais).                              | João, Eduardo, Thiago, Ana e Beatriz      |
 | 8ª semana | - Programação de Funcionalidades (Implementação de layouts de telas, Quadro Visual Atual de Gestão de Trabalho no Github <br> -  Status Atual das Contribuições dos  Membros do Time no Github e Comentários Adicionais sobre as Participações Individuais) <br> - Planos de Testes de Funcionalidades e Usabilidade <br> - Registros de Testes de Funcionalidades e Usabilidade.                                | João, Vitor e Beatriz        |
+
 
 
 | Semana       | Atividades Realizadas na Etapa 3                                                                                                                                                                                                                                                                          | Responsável      |
@@ -112,6 +114,7 @@ Essa abordagem permite visualizar facilmente o status de cada atividade, facilit
 | 11ª semana   | - Continuação da programação de funcionalidades<br>- Melhorias nos CRUDs e autenticação<br>- Adoção de padrões de projeto<br>- Registro de evidências de implementação<br>- Atualização do quadro visual de gestão de trabalho<br>- Status atual das contribuições e comentários individuais |  Vitor, Beatriz, Ana e Eduardo        |
 | 12ª semana   | - Finalização da programação de funcionalidades<br>- Evidências consolidadas de CRUDs e autenticação<br>- Atualização do quadro visual de gestão de trabalho e participação do time<br>- Elaboração dos planos de testes de funcionalidades e usabilidade<br>- Início dos testes registrados     |  Vitor, Beatriz, Ana e Eduardo        |
 | 13ª semana   | Planos de testes de funcionalidades e usabilidade<br>- Registros completos dos testes realizados nas funcionalidades principais e na experiência de uso                                                                                                                       |  Vitor, Beatriz, Ana e Eduardo        |
+
 
 
 ### Ferramentas
