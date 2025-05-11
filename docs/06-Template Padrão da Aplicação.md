@@ -1,12 +1,24 @@
-# Template Padrão da Aplicação
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
+## Guia de Estilos
+Antes de estabelecer o template da aplicação, foi desenvolvido um guia de estilos, detalhado nos itens a seguir, que norteou os padrões de design da interface da aplicação. 
 
-Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+### Paleta de Cores
+![image](https://github.com/user-attachments/assets/63d95dc1-6af3-48a9-9cf6-c5d8c180a165)
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+
+### Tipografia
+
+As fontes escolhidas para a construção da interface foram a Bold a e Reboto, que promovem uma sensação de comodidade, clareza e objetividade com seus ângulos.
+
+### Componentes
+
+botoes
+
+### Ícones
+
+
+
+## Fluxo de telas
+
+O fuxo de telas mostra a trilha de uso do usuario pela aplicação.
+
