@@ -1,8 +1,14 @@
 # Registro de Testes de Usabilidade
 
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
+| **Caso de Teste** 	| **RNF-01 – Interface intuitiva e clara** 	|
+| :---:	| :---:	|
+| Requisito Associado | RNF-001 - O sistema deve ter interface de usuário intuitiva e clara. |
+| Objetivo do Teste 	| Verificar se a interface do sistema é fácil de entender e usar para os usuários. |
+| Passos 	| 1. Observar a disposição dos elementos na tela.<br>2. Interagir com os botões e menus para realizar tarefas comuns. |
+| Critério de Êxito | Os usuários devem ser capazes de completar as tarefas designadas sem dificuldades significativas, demonstrando compreensão e eficiência na navegação. |
+|Registro de evidência |
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
 
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+
+https://github.com/user-attachments/assets/044b95f7-0cc2-4767-9f63-f317c521c8cd
+
