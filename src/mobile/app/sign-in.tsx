@@ -30,7 +30,7 @@ export default function SignIn() {
       }
     } catch (e) {
       console.error('Login error:', e);
-      setError('Ocorreu um erro ao tentar fazer login.');
+      setError('Ocorreu um erro ao tentar fazer login. Tente novamente mais tarde.');
     } finally {
       setLoading(false);
     }
