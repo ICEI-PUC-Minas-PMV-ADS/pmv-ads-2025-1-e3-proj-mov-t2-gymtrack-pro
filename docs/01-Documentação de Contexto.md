@@ -13,7 +13,7 @@ O objetivo principal deste projeto é criar um software para academias que resol
 Para atingir esse objetivo, foram definidos dois objetivos específicos:
 
 • Criar um sistema de cadastro que possibilite o armazenamento e a gestão dos dados dos usuários de forma segura e acessível.
-• Desenvolver uma interface intuitiva para que os alunos consigam visualizar e atualizar suas informações com facilidade.
+• Desenvolver uma interface intuitiva para que os alunos consigam visualizar e atualizar suas informações com facilidade. Para isso vamos desenvolver uma aplicação móvel e interativa
 
 ## Justificativa
 
