@@ -52,13 +52,24 @@ https://github.com/user-attachments/assets/eb3b1457-692d-464d-801a-3e381b1d9379
 
 | **Caso de Teste 05** 	| **RF-05 – Permitir que o aluno consulte fichas de treino.** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-04 A aplicação deve permitir que o usuário gerencie seu perfil.|
-| Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá alterar sua foto e seus dados. |
-|Critério de Êxito | O aplicação deve alterar os dados o usuário no Banco de Dados. <br>O usuário deve conseguir alterar sua foto. |
+|	Requisito Associado 	| RF-05 A aplicação deve permitir que o usuário consulte fichas de treino.|
+| Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá consultar as fichas de treino. |
+|Critério de Êxito | O aplicação deve permitir o usuario adicionar e remover as fixas de treino. |
 | Resultado 	| Usuário conseguindo alterar os dados da conta com sucesso. |
-|Evidência | GerenciarPerfil.mp4 |
+|Evidência | Gerenciar.mp4 |
 
 # - Teste de consulte fichas de treino.
 
 https://github.com/user-attachments/assets/e3ba2fd3-8218-4838-afb5-00a2a0133a26
+
+| **Caso de Teste 06** 	| **RF-07 – Permita que o aluno visualize seu plano.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-07 A aplicação deve permitir que o aluno visualize seu plano.|
+| Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá vizualizar as fixas disponiveis. |
+|Critério de Êxito | O aplicação deve permitir o usuário no Banco de Dados. <br>visualize seu plano disponivel na plataforma. |
+| Resultado 	| Usuário conseguindo vizualizar os dados da conta com sucesso. |
+
+# - Teste de visualização de plano.
+
+https://github.com/user-attachments/assets/cf47f3b2-4c97-43de-b140-16187ed6bff1
 
