@@ -50,3 +50,15 @@ https://github.com/user-attachments/assets/1788c230-4056-4099-90ee-ba67cbebf31a
 
 https://github.com/user-attachments/assets/eb3b1457-692d-464d-801a-3e381b1d9379
 
+| **Caso de Teste 05** 	| **RF-05 – Permitir que o aluno consulte fichas de treino.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-04 A aplicação deve permitir que o usuário gerencie seu perfil.|
+| Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá alterar sua foto e seus dados. |
+|Critério de Êxito | O aplicação deve alterar os dados o usuário no Banco de Dados. <br>O usuário deve conseguir alterar sua foto. |
+| Resultado 	| Usuário conseguindo alterar os dados da conta com sucesso. |
+|Evidência | GerenciarPerfil.mp4 |
+
+# - Teste de consulte fichas de treino.
+
+https://github.com/user-attachments/assets/e3ba2fd3-8218-4838-afb5-00a2a0133a26
+
