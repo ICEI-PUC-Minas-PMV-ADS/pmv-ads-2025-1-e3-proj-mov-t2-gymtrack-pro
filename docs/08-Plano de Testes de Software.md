@@ -77,6 +77,20 @@ Os testes funcionais serão conduzidos por participantes do grupo que não estiv
 
 ![Ct 7](https://github.com/user-attachments/assets/4a7a5c95-e3b3-41c3-97b5-a5ed6a60ffb9)
 
+| **Caso de Teste 07** 	| **RF-10 – Permitir que o aluno tenha controle dos treinos.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-10 A aplicação deve permitir que o aluno controle seu treino.|
+| Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá vizualizar o calendario. |
+|Critério de Êxito | O aplicação deve permitir o usuário no Banco de Dados. <br>marque no calendario. |
+
+| **Caso de Teste 08** 	| **RF-11 – Permitir que o aluno visualize os dias em que foi treinado.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-11 A aplicação deve permitir que o aluno controle seu treino.|
+| Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá vizualizar o calendario. |
+|Critério de Êxito | O aplicação deve permitir o usuário no Banco de Dados. <br>marque no calendario os dias que realizou os treinos e ps que nao foram realizados. |
+
+![CT 10 e 11](https://github.com/user-attachments/assets/b19b6e23-ad0e-4459-8e12-09f644f2eb6d)
+
 
 ## Ferramentas de Testes (Opcional)
 
