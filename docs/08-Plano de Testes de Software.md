@@ -13,6 +13,7 @@ Os testes funcionais serão conduzidos por participantes do grupo que não estiv
 ![image](https://github.com/user-attachments/assets/4547acec-0cf1-4bae-9921-f66ba45b60f9)
 
 
+
 #### CT-2
 |     Caso de teste     | CT-02 – Efetuar login |                                                                                                                                
 |:---|:---|
@@ -67,6 +68,14 @@ Os testes funcionais serão conduzidos por participantes do grupo que não estiv
 |Critério de Êxito | O aplicação deve permitir o usuario adicionar e remover as fixas de treino. |
 
 ![CT 5](https://github.com/user-attachments/assets/e0ec28ab-8cc4-4ff1-8b0c-a331702d9b13)
+
+| **Caso de Teste 06** 	| **RF-07 – Permita que o aluno visualize seu plano.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-07 A aplicação deve permitir que o aluno visualize seu plano.|
+| Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá vizualizar as fixas disponiveis. |
+|Critério de Êxito | O aplicação deve permitir o usuário no Banco de Dados. <br>visualize seu plano disponivel na plataforma. |
+
+![Ct 7](https://github.com/user-attachments/assets/4a7a5c95-e3b3-41c3-97b5-a5ed6a60ffb9)
 
 
 ## Ferramentas de Testes (Opcional)
