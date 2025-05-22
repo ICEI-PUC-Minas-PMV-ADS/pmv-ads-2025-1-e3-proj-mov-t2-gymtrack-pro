@@ -8,7 +8,7 @@ Essa tabela apresenta uma visão geral dos requisitos funcionais para um sistema
 | RF-002 | Permitir que o ADM mude planos dos alunos.                                              | -                     |       ANA               |
 | RF-003 | Permitir que o aluno consulte suas informações de cadastro.                             | -                     |       EDUARDO               |
 | RF-004 | Permitir que o aluno mude sua meta de treinos mensais.                                  | -                     |       VITOR               |
-| RF-005 | Permitir que o aluno consulte suas fichas de treino.                                    | -                     |       RYUK               |
+| RF-005 | Permitir que o aluno consulte suas fichas de treino.                                    | -                     |       JOAO GABRIEL               |
 | RF-006 | Permitir que o ADM edite as suas informações pessoais dos alunos.                       | -                     |       ALVARO               |
 | RF-007 | Permitir que o aluno visualize seu plano.                                               | -                     |       BEATRIZ               |
 | RF-008 | Permitir que o ADM visualize o plano de cada aluno.                                     | -                     |       THIAGO               |
