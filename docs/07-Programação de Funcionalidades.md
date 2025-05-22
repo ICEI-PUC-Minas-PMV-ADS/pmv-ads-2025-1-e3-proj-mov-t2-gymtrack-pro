@@ -13,6 +13,6 @@ Essa tabela apresenta uma visão geral dos requisitos funcionais para um sistema
 | RF-007 | Permitir que o aluno visualize seu plano.                                               | -                     |       BEATRIZ               |
 | RF-008 | Permitir que o ADM visualize o plano de cada aluno.                                     | -                     |       THIAGO               |
 | RF-009 | Permitir que o ADM faça a matrícula dos alunos.                                         | -                     |       JOAO GABRIEL               |
-| RF-010 | Permitir que o aluno marque aulas com os treinadores disponíveis.                       | -                     |       ANA               |
+| RF-010 | Permitir que o aluno tenha controle dos treinos.                       | -                     |       ANA               |
 | RF-011 | Permitir que o aluno visualize os dias em que foi treinar.                              | -                     |       THIAGO               |
 | RF-012 | Permitir que o usuário entre em sua conta com um login simples (e-mail e senha).        | -                     |       VITOR               |
