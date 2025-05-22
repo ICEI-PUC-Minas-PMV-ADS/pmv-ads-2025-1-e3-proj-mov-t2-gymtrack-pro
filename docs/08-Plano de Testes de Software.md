@@ -59,6 +59,16 @@ Os testes funcionais serão conduzidos por participantes do grupo que não estiv
 ![image](https://github.com/user-attachments/assets/15a046ee-a569-4034-afed-558aa2c31cf1)
 
 
+#### CT-5
+| **Caso de Teste 05** 	| **RF-05 – Permitir que o aluno consulte fichas de treino.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-05 A aplicação deve permitir que o usuário consulte fichas de treino.|
+| Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá consultar as fichas de treino. |
+|Critério de Êxito | O aplicação deve permitir o usuario adicionar e remover as fixas de treino. |
+
+![CT 5](https://github.com/user-attachments/assets/e0ec28ab-8cc4-4ff1-8b0c-a331702d9b13)
+
+
 ## Ferramentas de Testes (Opcional)
 
 Os testes serão realizados diretamente na aplicação assim que seu desenvolvimento for concluído.
