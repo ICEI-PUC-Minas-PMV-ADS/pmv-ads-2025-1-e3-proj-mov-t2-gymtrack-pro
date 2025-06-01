@@ -7,7 +7,7 @@ import { User, ProfileUpdates, AuthContextType } from '@/types';
 @IMPORTANTE:
 Configurar a URL da API de acordo com o ambiente de produção
 */
-const API_URL = __DEV__ ? 'http://localhost:3000' : 'https://production-api.com';
+const API_URL = __DEV__ ? 'http://192.168.0.161:3000' : 'https://production-api.com';
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
