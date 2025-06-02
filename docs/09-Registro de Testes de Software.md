@@ -88,13 +88,16 @@ https://github.com/user-attachments/assets/cf47f3b2-4c97-43de-b140-16187ed6bff1
 # - Teste de controle dos treinos.
 
 
-https://github.com/user-attachments/assets/5f59a224-0f5c-43f8-ae57-9dd64041527d
+https://github.com/user-attachments/assets/2dfd77e3-0a21-4508-a306-631b6536e55d
 
-| **Caso de Teste 08** 	| **RF-11 – Permitir que o aluno visualize os dias em que foi treinado.** 	|
+
+| **Caso de Teste 08** 	| **RF-11 –Permitir que o aluno tenha controle sobre os dias em que foi treinar.** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-11 A aplicação deve permitir que o aluno controle seu treino.|
+|	Requisito Associado |	RF-12 Permitir que o usuário visualize seu dashboard de treinos feitos.|
+|	Requisito Associado |	RF-10  Permitir que o usuário visualize seu dashboard de treinos faltados.|
 | Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá vizualizar o calendario. |
-|Critério de Êxito | O aplicação deve permitir o usuário no Banco de Dados. <br>marque no calendario os dias que realizou os treinos e ps que nao foram realizados. |
+| Critério de Êxito | O aplicação deve permitir o usuário no Banco de Dados. <br>marque no calendario os dias que realizou os treinos e ps que nao foram realizados. |
 | Resultado 	| Usuário conseguindo marca os dias de treino, cada um com uma cor sinalizando objetivo. |
 
 # - Teste de controle dos treinos.
