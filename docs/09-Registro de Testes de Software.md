@@ -40,6 +40,7 @@ https://github.com/user-attachments/assets/1788c230-4056-4099-90ee-ba67cbebf31a
 | **Caso de Teste 04** 	| **CT-04 – Gerenciar perfil.** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-04 A aplicação deve permitir que o usuário gerencie seu perfil.|
+|	Requisito Associado 	| RF-03 Permitir que o aluno consulte suas informações de cadastro.|
 | Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá alterar sua foto e seus dados. |
 |Critério de Êxito | O aplicação deve alterar os dados o usuário no Banco de Dados. <br>O usuário deve conseguir alterar sua foto. |
 | Resultado 	| Usuário conseguindo alterar os dados da conta com sucesso. |
