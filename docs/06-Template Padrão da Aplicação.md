@@ -25,4 +25,6 @@ As fontes escolhidas para a construção da interface foram a Bold a e Reboto, q
 
 O fuxo de telas mostra a trilha de uso do usuario pela aplicação.
 
-![image](https://github.com/user-attachments/assets/974596c0-d675-4abd-8533-76cde4766fcb)
+![image](https://github.com/user-attachments/assets/3382ca98-1314-4b5d-807f-77db355530fa)
+![image](https://github.com/user-attachments/assets/98a5ee85-b2f4-4785-b895-427b531a763a)
+![image](https://github.com/user-attachments/assets/a6195df5-3c29-40a3-bfb4-a0ea61470132)
