@@ -39,8 +39,8 @@ https://github.com/user-attachments/assets/1788c230-4056-4099-90ee-ba67cbebf31a
 
 | **Caso de Teste 04** 	| **CT-04 – Gerenciar perfil.** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-04 A aplicação deve permitir que o usuário gerencie seu perfil.|
-|	Requisito Associado 	| RF-03 Permitir que o aluno consulte suas informações de cadastro.|
+|	Requisito Associado 	| RF-04 A aplicação deve permitir que o usuário gerencie seu perfil. |
+|	Requisito Associado 	| RF-03 Permitir que o aluno consulte suas informações de cadastro. |
 | Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá alterar sua foto e seus dados. |
 |Critério de Êxito | O aplicação deve alterar os dados o usuário no Banco de Dados. <br>O usuário deve conseguir alterar sua foto. |
 | Resultado 	| Usuário conseguindo alterar os dados da conta com sucesso. |
@@ -53,7 +53,7 @@ https://github.com/user-attachments/assets/eb3b1457-692d-464d-801a-3e381b1d9379
 
 | **Caso de Teste 05** 	| **RF-05 – Permitir que o aluno consulte fichas de treino.** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-05 | A aplicação deve permitir que o usuário consulte fichas de treino.|
+|	Requisito Associado 	| RF-05 | A aplicação deve permitir que o usuário consulte fichas de treino. |
 |	Requisito Associado 	| RF-06 |  A aplicação deve permitir que o usuário monte suas fichas de treino. |
 |	Requisito Associado 	| RF-07 |  A aplicação deve permitir que o aluno visualize seu plano. |
 | Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá consultar as fichas de treino. |
@@ -80,7 +80,7 @@ https://github.com/user-attachments/assets/cf47f3b2-4c97-43de-b140-16187ed6bff1
 
 | **Caso de Teste 07** 	| **RF-10 – Permitir que o aluno tenha controle dos treinos.** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-10 A aplicação deve permitir que o aluno controle seu treino.|
+|	Requisito Associado 	| RF-10 A aplicação deve permitir que o aluno controle seu treino. |
 | Objetivo do Teste 	| Verificar se ao entrar na página do seu perfil, o usuário conseguirá vizualizar o calendario. |
 |Critério de Êxito | O aplicação deve permitir o usuário no Banco de Dados. <br>marque no calendario. |
 | Resultado 	| Usuário conseguindo marca os dias de treino. |
