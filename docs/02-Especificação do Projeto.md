@@ -163,18 +163,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 | ID     | Descrição do Requisito                                           | Prioridade |
 |--------|------------------------------------------------------------------|------------|
-| RF-001 | Permitir que o ADM mude as fichas de treino disponiveis.      | ALTA       |
-| RF-002 | Permitir que o ADM mude planos dos alunos. | ALTA       |
+| RF-001 | Permitir que o usuário cadastre uma conta.      | ALTA       |
+| RF-002 | Permitir que o usuário acesse sua conta.. | ALTA       |
 | RF-003 | Permitir que o aluno consulte suas informações de cadastro.      | ALTA       |
-| RF-004 | Permitir que o aluno mude sua meta de treinos mensais.             | ALTA       |
+| RF-004 | Permitir que o usuário gerencie seu perfil.             | ALTA       |
 | RF-005 | Permitir que o aluno consulte suas fichas de treino.             | ALTA       |
-| RF-006 | Permitir que a ADM edite as suas informações pessoais dos aluno.  | MÉDIA      |
+| RF-006 | Permitir que o usuário monte suas fichas de treino.  | MÉDIA      |
 | RF-007 | Permitir que o aluno visualize seu plano.                      | MÉDIA      |
-| RF-008 | Permitir que o ADM visualize o plano de cada aluno. | ALTA       |
-| RF-009 | Permitir que a ADM faça a matrícula dos alunos.               | ALTA       |
-| RF-010 | Permitir que o aluno marque aulas com os treinadores disponíveis. | MÉDIA      |
-| RF-011 | Permitir que o aluno visualize os dias em que foi treinar.              | MÉDIA      |
-| RF-012 | Permitir que o usuário entre em sua conta com um login simples (e-mail e senha). | ALTA       |
+| RF-008 | Permitir que o ADM monte a ficha dos alunos. | ALTA       |
+| RF-009 | Permitir que a ADM preencha o dashboard dos alunos .               | ALTA       |
+| RF-010 | Permitir que o usuário visualize seu dashboard de treinos faltados. | MÉDIA      |
+| RF-011 | Permitir que o aluno tenha controle sobre os dias em que foi treinar.              | MÉDIA      |
+| RF-012 | Permitir que o usuário visualize seu dashboard de treinos feitos. | ALTA       |
 
 
 ### Requisitos não Funcionais
