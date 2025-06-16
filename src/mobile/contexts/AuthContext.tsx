@@ -1,13 +1,22 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { User, ProfileUpdates, AuthContextType } from '@/types';
+import { User, ProfileUpdates } from '@/types';
+
+type AuthContextType = {
+  isAuthenticated: boolean;
+  user: User | null;
+  login: (email: string, password: string) => Promise<boolean>;
+  logout: () => Promise<void>;
+  register: (name: string, email: string, password: string, goal?: string, isAdmin?: boolean) => Promise<boolean>;
+  updateProfile: (updates: ProfileUpdates) => Promise<boolean>;
+};
 
 /* 
 @IMPORTANTE:
 Configurar a URL da API de acordo com o ambiente de produção
 */
-const API_URL = __DEV__ ? 'http://192.168.0.161:3000' : 'https://production-api.com';
+const API_URL = __DEV__ ? 'http://localhost:3000' : 'https://production-api.com';
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
@@ -87,7 +96,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
-  const register = async (name: string, email: string, password: string, goal?: string) => {
+  const register = async (name: string, email: string, password: string, goal?: string, isAdmin?: boolean) => {
     try {
       const response = await fetch(`${API_URL}/api/v1/users`, {
         method: 'POST',
@@ -99,6 +108,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           email, 
           password, 
           goal: goal || undefined,
+          isAdmin: isAdmin || false,
         }),
       });
 
