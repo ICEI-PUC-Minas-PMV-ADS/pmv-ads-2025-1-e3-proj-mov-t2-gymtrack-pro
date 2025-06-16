@@ -11,7 +11,6 @@ const style = StyleSheet.create ({
     boxTop:{
         height: Dimensions.get('window').height/4,
         width: '100%',
-        // backgroundColor: 'red',
         alignItems: 'center',
         justifyContent: 'center'
 
@@ -19,14 +18,12 @@ const style = StyleSheet.create ({
     boxMid:{
         height: Dimensions.get('window').height/4,
         width: '100%',
-        // backgroundColor: 'green',
         paddingHorizontal: 37,
 
     },
     boxbutton:{
         height: Dimensions.get('window').height/3,
         width: '100%',
-        // backgroundColor: 'blue',
         alignItems: 'center',
     },
     button:{
@@ -56,7 +53,6 @@ const style = StyleSheet.create ({
     input: {
         height:'100%',
         width: '90%',
-        // backgroundColor:
         borderRadius: 40,
     },
     TextFinal:{
@@ -87,10 +83,22 @@ const style = StyleSheet.create ({
         width: '100%',
         alignItems: 'center',
         marginTop: 20
-    },
-    signInLink: {
+    },    signInLink: {
         marginTop: 20,
         marginBottom: 30
+    },
+    toggleContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginTop: 15,
+        marginBottom: 15,
+        paddingHorizontal: 10
+    },
+    toggleLabel: {
+        fontSize: 16,
+        color: themas.colors.black,
+        fontWeight: '500'
     }
 })
 

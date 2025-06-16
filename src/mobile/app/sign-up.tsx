@@ -1,5 +1,5 @@
 import { useAuth } from '@/contexts/AuthContext';
-import { Text, View, Image, TouchableOpacity, Alert, ScrollView, Dimensions } from 'react-native';
+import { Text, View, Image, TouchableOpacity, Alert, ScrollView, Switch } from 'react-native';
 import style  from './styles';
 import { MaterialIcons } from '@expo/vector-icons';
 import { useState } from 'react';
@@ -13,6 +13,7 @@ export default function SignUp() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [goal, setGoal] = useState('');
+  const [isAdmin, setIsAdmin] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState('');
@@ -29,7 +30,7 @@ export default function SignUp() {
     }
 
     try {
-      const success = await register(name, email, password, goal);
+      const success = await register(name, email, password, goal, isAdmin);
       if (success) {
         Alert.alert('Sucesso!', 'Cadastro realizado com sucesso. Você pode fazer login agora.');
         router.replace('/sign-in');
@@ -76,14 +77,7 @@ export default function SignUp() {
             autoCapitalize='none'
             autoCorrect={false}
           />
-          <Input
-            value={goal}
-            onChangeText={setGoal}
-            title="META (OPCIONAL)"
-            IconRight={MaterialIcons}
-            iconRightName="fitness-center"
-            placeholder="Ex: Ganhar massa muscular"
-          />
+
           <Input
             value={password}
             onChangeText={setPassword}
@@ -102,6 +96,28 @@ export default function SignUp() {
             iconRightName={showConfirmPassword ? "visibility-off" : "visibility"}
             onIconRightPress={() => setShowConfirmPassword(!showConfirmPassword)}
           />
+          
+          <View style={style.toggleContainer}>
+            <Text style={style.toggleLabel}>É um administrador?</Text>
+            <Switch
+              value={isAdmin}
+              onValueChange={setIsAdmin}
+              trackColor={{ false: '#767577', true: '#81b0ff' }}
+              thumbColor={isAdmin ? '#f5dd4b' : '#f4f3f4'}
+            />
+          </View>
+
+           {!isAdmin && (
+            <Input
+              value={goal}
+              onChangeText={setGoal}
+              title="META (OPCIONAL)"
+              IconRight={MaterialIcons}
+              iconRightName="fitness-center"
+              placeholder="Ex: Ganhar massa muscular"
+            />
+          )}
+          
           {error ? <Text style={style.errorText}>{error}</Text> : null}
         </View>
 
