@@ -101,6 +101,10 @@ export default function Dashboard() {
           onUserSelect={(userId, userName) => {
             setSelectedUserId(userId);
             setSelectedUserName(userName);
+            // Resetar contadores ao trocar usuário
+            setPresencas(0);
+            setFaltas(0);
+            setTotal(0);
           }}
         />
       )}
