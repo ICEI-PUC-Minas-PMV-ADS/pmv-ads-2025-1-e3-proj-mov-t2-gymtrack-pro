@@ -58,16 +58,28 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Token inválido" }, { status: 401 });
     }
 
-    const { name, description, exercises } = await request.json();
+    const { name, description, exercises, userId: targetUserId } = await request.json();
     
     if (!name || !exercises) {
       return NextResponse.json({ error: "Nome e exercícios são obrigatórios" }, { status: 400 });
     }
 
+    // Determinar para qual usuário criar a rotina
+    let userIdToCreate = decoded.id;
+    
+    if (targetUserId && targetUserId !== decoded.id) {
+      // Verificar se é admin
+      const [currentUser] = await db.select().from(users).where(eq(users.id, decoded.id));
+      if (!currentUser || currentUser.role !== 'ADMIN') {
+        return NextResponse.json({ error: "Acesso negado" }, { status: 403 });
+      }
+      userIdToCreate = targetUserId;
+    }
+
     const [newRoutine] = await db
       .insert(workoutRoutines)
       .values({
-        userId: decoded.id,
+        userId: userIdToCreate,
         name,
         description: description || "",
         exercises: JSON.stringify(exercises)
