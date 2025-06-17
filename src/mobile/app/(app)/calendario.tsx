@@ -87,6 +87,83 @@ export default function Calendario() {
   };
 
   const aoSelecionarDia = async (day: any) => {
+    // Não permitir edição se for admin visualizando outro usuário
+    if (isAdmin && selectedUserId) {
+      // Admin pode editar dados de alunos
+      const targetUserId = selectedUserId;
+      await aoSelecionarDiaAdmin(day, targetUserId);
+    } else {
+      // Usuário editando próprios dados
+      await aoSelecionarDiaUsuario(day);
+    }
+  };
+
+  const aoSelecionarDiaAdmin = async (day: any, targetUserId: string) => {
+    const date = day.dateString;
+    const currentMark = (markedDates as any)[date];
+
+    const novoMarked = { ...markedDates };
+    let presente: boolean | null = null;
+
+    if (!currentMark) {
+      // Marcar como PRESENÇA (verde)
+      (novoMarked as any)[date] = {
+        customStyles: {
+          container: {},
+          text: { color: 'green', fontWeight: 'bold' },
+        },
+      };
+      presente = true;
+    } else if (currentMark?.customStyles?.text?.color === 'green') {
+      // Trocar para FALTA (vermelho)
+      (novoMarked as any)[date] = {
+        customStyles: {
+          container: {},
+          text: { color: 'red', fontWeight: 'bold' },
+        },
+      };
+      presente = false;
+    } else if (currentMark?.customStyles?.text?.color === 'red') {
+      // Desmarcar (remover)
+      delete (novoMarked as any)[date];
+      presente = null;
+    }
+
+    // Atualizar estado local imediatamente
+    setMarkedDates(novoMarked);
+
+    // Sincronizar com backend para o usuário selecionado
+    try {
+      const token = await AsyncStorage.getItem('userToken');
+      if (token) {
+        if (presente === null) {
+          // Deletar do backend
+          await fetch(`${API_URL}/api/v1/attendance`, {
+            method: 'DELETE',
+            headers: {
+              'Authorization': `Bearer ${token}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ date, userId: targetUserId }),
+          });
+        } else {
+          // Criar/atualizar no backend
+          await fetch(`${API_URL}/api/v1/attendance`, {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${token}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ date, present: presente, userId: targetUserId }),
+          });
+        }
+      }
+    } catch (error) {
+      console.error('Erro ao sincronizar com backend:', error);
+    }
+  };
+
+  const aoSelecionarDiaUsuario = async (day: any) => {
     const date = day.dateString;
     const currentMark = (markedDates as any)[date];
 
@@ -160,6 +237,8 @@ export default function Calendario() {
           onUserSelect={(userId, userName) => {
             setSelectedUserId(userId);
             setSelectedUserName(userName);
+            // Limpar dados ao trocar usuário
+            setMarkedDates({});
           }}
         />
       )}
@@ -189,6 +268,7 @@ export default function Calendario() {
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
