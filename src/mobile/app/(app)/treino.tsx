@@ -138,17 +138,26 @@ export default function Treino() {
         return;
       }
 
+      // Se for admin salvando para um aluno específico
+      const targetUserId = isAdmin && selectedUserId ? selectedUserId : null;
+      const requestBody: any = {
+        name: nomeRotina,
+        description: descricaoRotina,
+        exercises: fichaSalva
+      };
+
+      // Se for admin e tiver selecionado um usuário, adicionar o userId
+      if (targetUserId) {
+        requestBody.userId = targetUserId;
+      }
+
       const response = await fetch(`${API_URL}/api/v1/workout-routines`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          name: nomeRotina,
-          description: descricaoRotina,
-          exercises: fichaSalva
-        }),
+        body: JSON.stringify(requestBody),
       });
 
       if (response.ok) {
