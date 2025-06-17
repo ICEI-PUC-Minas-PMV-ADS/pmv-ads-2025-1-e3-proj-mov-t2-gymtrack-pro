@@ -116,10 +116,22 @@ export async function DELETE(request: NextRequest) {
       return NextResponse.json({ error: "Token inválido" }, { status: 401 });
     }
 
-    const { date } = await request.json();
+    const { date, userId: targetUserId } = await request.json();
     
     if (!date) {
       return NextResponse.json({ error: "Data é obrigatória" }, { status: 400 });
+    }
+
+    // Determinar para qual usuário deletar a presença
+    let userIdToDelete = decoded.id;
+    
+    if (targetUserId && targetUserId !== decoded.id) {
+      // Verificar se é admin
+      const [currentUser] = await db.select().from(users).where(eq(users.id, decoded.id));
+      if (!currentUser || currentUser.role !== 'ADMIN') {
+        return NextResponse.json({ error: "Acesso negado" }, { status: 403 });
+      }
+      userIdToDelete = targetUserId;
     }
 
     // Deletar registro para a data específica
@@ -127,7 +139,7 @@ export async function DELETE(request: NextRequest) {
       .delete(attendance)
       .where(
         and(
-          eq(attendance.userId, decoded.id),
+          eq(attendance.userId, userIdToDelete),
           eq(attendance.date, new Date(date))
         )
       );
