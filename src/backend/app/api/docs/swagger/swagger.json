@@ -39,11 +39,11 @@
                     "user": {
                       "type": "object",
                       "properties": {
-                        "id": { "type": "integer" },
+                        "id": { "type": "string" },
                         "name": { "type": "string" },
                         "email": { "type": "string" },
                         "role": { "type": "string" },
-                        "goal": { "type": "integer" }
+                        "goal": { "type": "string" }
                       }
                     }
                   }
@@ -53,15 +53,15 @@
           },
           "400": {
             "description": "Campos obrigatórios",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
           },
           "401": {
             "description": "Credenciais inválidas",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
           },
           "500": {
-            "description": "Erro ao conectar ao banco de dados",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+            "description": "Erro interno do servidor",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
           }
         }
       }
@@ -79,7 +79,8 @@
                   "name": { "type": "string" },
                   "email": { "type": "string" },
                   "password": { "type": "string" },
-                  "goal": { "type": "integer" }
+                  "goal": { "type": "string" },
+                  "isAdmin": { "type": "boolean" }
                 },
                 "required": ["name", "email", "password"]
               }
@@ -94,16 +95,7 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "user": {
-                      "type": "object",
-                      "properties": {
-                        "id": { "type": "integer" },
-                        "name": { "type": "string" },
-                        "email": { "type": "string" },
-                        "role": { "type": "string" },
-                        "goal": { "type": "integer" }
-                      }
-                    },
+                    "user": { "$ref": "#/components/schemas/User" },
                     "token": { "type": "string" }
                   }
                 }
@@ -112,91 +104,30 @@
           },
           "409": {
             "description": "Email já cadastrado",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
           },
           "500": {
-            "description": "Erro ao conectar ao banco de dados",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+            "description": "Erro interno do servidor",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
           }
         }
       }
     },
-    "/users/{id}": {
-      "put": {
-        "summary": "Atualizar dados de qualquer usuário",
-        "parameters": [
-          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
-        ],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "name": { "type": "string" },
-                  "goal": { "type": "integer" },
-                  "password": { "type": "string" },
-                  "isActive": { "type": "boolean" }
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Usuário atualizado",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "user": {
-                      "type": "object",
-                      "properties": {
-                        "id": { "type": "integer" },
-                        "name": { "type": "string" },
-                        "email": { "type": "string" },
-                        "role": { "type": "string" },
-                        "goal": { "type": "integer" }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "ID obrigatório ou nada para atualizar",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
-          },
-          "500": {
-            "description": "Erro ao conectar ao banco de dados",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
-          }
-        }
-      }
-    },
-    "/users/me": {
+    "/users/all": {
       "get": {
-        "summary": "Ver meu próprio perfil",
+        "summary": "Listar todos os usuários (apenas para admins)",
+        "security": [{ "bearerAuth": [] }],
         "responses": {
           "200": {
-            "description": "Perfil do usuário",
+            "description": "Lista de usuários",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "user": {
-                      "type": "object",
-                      "properties": {
-                        "id": { "type": "integer" },
-                        "name": { "type": "string" },
-                        "email": { "type": "string" },
-                        "role": { "type": "string" },
-                        "goal": { "type": "integer" }
-                      }
+                    "users": {
+                      "type": "array",
+                      "items": { "$ref": "#/components/schemas/User" }
                     }
                   }
                 }
@@ -205,20 +136,46 @@
           },
           "401": {
             "description": "Token não fornecido ou inválido",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          }
+        }
+      }
+    },
+    "/users/me": {
+      "get": {
+        "summary": "Ver meu próprio perfil",
+        "security": [{ "bearerAuth": [] }],
+        "responses": {
+          "200": {
+            "description": "Perfil do usuário",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "user": { "$ref": "#/components/schemas/User" }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Token não fornecido ou inválido",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
           },
           "404": {
             "description": "Usuário não encontrado",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
-          },
-          "500": {
-            "description": "Erro ao conectar ao banco de dados",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
           }
         }
       },
       "put": {
         "summary": "Atualizar meu próprio perfil",
+        "security": [{ "bearerAuth": [] }],
         "requestBody": {
           "required": true,
           "content": {
@@ -227,9 +184,8 @@
                 "type": "object",
                 "properties": {
                   "name": { "type": "string" },
-                  "goal": { "type": "integer" },
-                  "password": { "type": "string" },
-                  "isActive": { "type": "boolean" }
+                  "goal": { "type": "string" },
+                  "password": { "type": "string" }
                 }
               }
             }
@@ -243,16 +199,7 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "user": {
-                      "type": "object",
-                      "properties": {
-                        "id": { "type": "integer" },
-                        "name": { "type": "string" },
-                        "email": { "type": "string" },
-                        "role": { "type": "string" },
-                        "goal": { "type": "integer" }
-                      }
-                    }
+                    "user": { "$ref": "#/components/schemas/User" }
                   }
                 }
               }
@@ -260,160 +207,58 @@
           },
           "400": {
             "description": "Nada para atualizar",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
           },
           "401": {
             "description": "Token não fornecido ou inválido",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
-          },
-          "404": {
-            "description": "Usuário não encontrado",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
-          },
-          "500": {
-            "description": "Erro ao conectar ao banco de dados",
-            "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } }
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
           }
         }
       }
     },
-    "/plans": {
+    "/attendance": {
       "get": {
-        "summary": "Listar todos os planos de treino",
+        "summary": "Buscar presenças do usuário",
+        "security": [{ "bearerAuth": [] }],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string" },
+            "description": "ID do usuário (apenas para admins)"
+          }
+        ],
         "responses": {
           "200": {
-            "description": "Lista de planos",
+            "description": "Lista de presenças",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "plans": {
+                    "attendances": {
                       "type": "array",
-                      "items": { "$ref": "#/components/schemas/Plan" }
+                      "items": { "$ref": "#/components/schemas/Attendance" }
                     }
                   }
                 }
               }
             }
-          }
-        }
-      }
-    },
-    "/plans/{id}": {
-      "put": {
-        "summary": "Editar um plano de treino",
-        "parameters": [
-          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
-        ],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": { "$ref": "#/components/schemas/Plan" }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Plano atualizado",
-            "content": {
-              "application/json": {
-                "schema": { "$ref": "#/components/schemas/PlanUpdated" }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/users/{id}/plan": {
-      "get": {
-        "summary": "Consultar plano atribuído a um usuário",
-        "parameters": [
-          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
-        ],
-        "responses": {
-          "200": {
-            "description": "Plano do usuário",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "userId": { "type": "string" },
-                    "plan": { "$ref": "#/components/schemas/Plan" }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/users/{id}/routines": {
-      "get": {
-        "summary": "Listar fichas de treino do usuário",
-        "parameters": [
-          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
-        ],
-        "responses": {
-          "200": {
-            "description": "Lista de fichas de treino",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "userId": { "type": "string" },
-                    "routines": {
-                      "type": "array",
-                      "items": { "$ref": "#/components/schemas/Routine" }
-                    }
-                  }
-                }
-              }
-            }
+          },
+          "401": {
+            "description": "Token não fornecido ou inválido",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
           }
         }
       },
       "post": {
-        "summary": "Criar nova ficha de treino para o usuário",
-        "parameters": [
-          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
-        ],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": { "$ref": "#/components/schemas/Routine" }
-            }
-          }
-        },
-        "responses": {
-          "201": {
-            "description": "Ficha criada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "userId": { "type": "string" },
-                    "routineId": { "type": "integer" },
-                    "message": { "type": "string" }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/users/{id}/goals": {
-      "put": {
-        "summary": "Atualizar meta mensal de treinos do usuário",
-        "parameters": [
-          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
-        ],
+        "summary": "Criar ou atualizar presença",
+        "security": [{ "bearerAuth": [] }],
         "requestBody": {
           "required": true,
           "content": {
@@ -421,131 +266,316 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "goal": { "type": "integer" }
+                  "date": { "type": "string", "format": "date" },
+                  "present": { "type": "boolean" }
                 },
-                "required": ["goal"]
+                "required": ["date", "present"]
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "Meta atualizada",
+            "description": "Presença atualizada",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "userId": { "type": "string" },
-                    "goal": { "type": "integer" },
+                    "attendance": { "$ref": "#/components/schemas/Attendance" }
+                  }
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Presença criada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "attendance": { "$ref": "#/components/schemas/Attendance" }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Data e status são obrigatórios",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          },
+          "401": {
+            "description": "Token não fornecido ou inválido",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Remover presença",
+        "security": [{ "bearerAuth": [] }],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "date": { "type": "string", "format": "date" }
+                },
+                "required": ["date"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Presença removida com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
                     "message": { "type": "string" }
                   }
                 }
               }
             }
+          },
+          "400": {
+            "description": "Data é obrigatória",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          },
+          "401": {
+            "description": "Token não fornecido ou inválido",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
           }
         }
       }
     },
-    "/reports/financial": {
+    "/workout-routines": {
       "get": {
-        "summary": "Obter relatório financeiro mensal",
+        "summary": "Buscar rotinas de treino do usuário",
+        "security": [{ "bearerAuth": [] }],
         "parameters": [
-          { "name": "month", "in": "query", "required": true, "schema": { "type": "string", "example": "2024-06" } }
+          {
+            "name": "userId",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string" },
+            "description": "ID do usuário (apenas para admins)"
+          }
         ],
         "responses": {
           "200": {
-            "description": "Relatório financeiro mensal",
+            "description": "Lista de rotinas de treino",
             "content": {
               "application/json": {
-                "schema": { "$ref": "#/components/schemas/FinancialReport" }
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "routines": {
+                      "type": "array",
+                      "items": { "$ref": "#/components/schemas/WorkoutRoutine" }
+                    }
+                  }
+                }
               }
             }
+          },
+          "401": {
+            "description": "Token não fornecido ou inválido",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          },
+          "403": {
+            "description": "Acesso negado",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          }
+        }
+      },
+      "post": {
+        "summary": "Criar nova rotina de treino",
+        "security": [{ "bearerAuth": [] }],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "description": { "type": "string" },
+                  "exercises": { "type": "array", "items": { "type": "object" } }
+                },
+                "required": ["name", "exercises"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Rotina criada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "routine": { "$ref": "#/components/schemas/WorkoutRoutine" }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Nome e exercícios são obrigatórios",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          },
+          "401": {
+            "description": "Token não fornecido ou inválido",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          }
+        }
+      },
+      "put": {
+        "summary": "Atualizar rotina de treino",
+        "security": [{ "bearerAuth": [] }],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": { "type": "string" },
+                  "name": { "type": "string" },
+                  "description": { "type": "string" },
+                  "exercises": { "type": "array", "items": { "type": "object" } }
+                },
+                "required": ["id", "name", "exercises"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Rotina atualizada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "routine": { "$ref": "#/components/schemas/WorkoutRoutine" }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID, nome e exercícios são obrigatórios",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          },
+          "401": {
+            "description": "Token não fornecido ou inválido",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          },
+          "404": {
+            "description": "Rotina não encontrada",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Deletar rotina de treino",
+        "security": [{ "bearerAuth": [] }],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": { "type": "string" }
+                },
+                "required": ["id"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Rotina removida com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": { "type": "string" }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID é obrigatório",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          },
+          "401": {
+            "description": "Token não fornecido ou inválido",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
           }
         }
       }
     }
   },
   "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
     "schemas": {
       "User": {
         "type": "object",
         "properties": {
-          "id": { "type": "integer" },
+          "id": { "type": "string" },
           "name": { "type": "string" },
           "email": { "type": "string" },
-          "role": { "type": "string" },
-          "active": { "type": "boolean" },
-          "goal": { "type": "integer" }
+          "role": { "type": "string", "enum": ["ADMIN", "STUDENT"] },
+          "goal": { "type": "string" },
+          "isActive": { "type": "string" },
+          "createdAt": { "type": "string", "format": "date-time" },
+          "updatedAt": { "type": "string", "format": "date-time" }
         }
       },
-      "UserCreated": {
-        "allOf": [
-          { "$ref": "#/components/schemas/User" },
-          {
-            "type": "object",
-            "properties": {
-              "message": { "type": "string" }
-            }
-          }
-        ]
-      },
-      "UserUpdated": {
-        "allOf": [
-          { "$ref": "#/components/schemas/User" },
-          {
-            "type": "object",
-            "properties": {
-              "message": { "type": "string" }
-            }
-          }
-        ]
-      },
-      "Plan": {
+      "Attendance": {
         "type": "object",
         "properties": {
-          "id": { "type": "integer" },
+          "id": { "type": "string" },
+          "userId": { "type": "string" },
+          "date": { "type": "string", "format": "date-time" },
+          "present": { "type": "boolean" },
+          "createdAt": { "type": "string", "format": "date-time" },
+          "updatedAt": { "type": "string", "format": "date-time" }
+        }
+      },
+      "WorkoutRoutine": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "userId": { "type": "string" },
           "name": { "type": "string" },
-          "price": { "type": "number" },
-          "duration": { "type": "string" }
+          "description": { "type": "string" },
+          "exercises": { "type": "string" },
+          "createdAt": { "type": "string", "format": "date-time" },
+          "updatedAt": { "type": "string", "format": "date-time" }
         }
       },
-      "PlanUpdated": {
-        "allOf": [
-          { "$ref": "#/components/schemas/Plan" },
-          {
-            "type": "object",
-            "properties": {
-              "message": { "type": "string" }
-            }
-          }
-        ]
-      },
-      "Routine": {
+      "Error": {
         "type": "object",
         "properties": {
-          "id": { "type": "integer" },
-          "name": { "type": "string" },
-          "exercises": { "type": "integer" }
-        }
-      },
-      "FinancialReport": {
-        "type": "object",
-        "properties": {
-          "month": { "type": "string" },
-          "revenue": { "type": "number" },
-          "expenses": { "type": "number" },
-          "profit": { "type": "number" },
-          "details": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string" },
-                "value": { "type": "number" }
-              }
-            }
-          }
+          "error": { "type": "string" }
         }
       }
     }
