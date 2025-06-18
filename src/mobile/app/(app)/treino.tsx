@@ -73,6 +73,8 @@ export default function Treino() {
   const [fichaSalva, setFichaSalva] = useState<GrupoTreino[]>([]);
   const [rotinasCarregadas, setRotinasCarregadas] = useState<RotinaSalva[]>([]);
   const [modalSalvar, setModalSalvar] = useState(false);
+  const [modalVisualizarRotina, setModalVisualizarRotina] = useState(false);
+  const [rotinaParaVisualizar, setRotinaParaVisualizar] = useState<RotinaSalva | null>(null);
   const [nomeRotina, setNomeRotina] = useState('');
   const [descricaoRotina, setDescricaoRotina] = useState('');
   const [loading, setLoading] = useState(true);
@@ -222,6 +224,31 @@ export default function Treino() {
     Alert.alert('Sucesso', `Rotina "${rotina.name}" carregada!`);
   };
 
+  // Visualizar detalhes da rotina
+  const visualizarRotina = (rotina: RotinaSalva) => {
+    setRotinaParaVisualizar(rotina);
+    setModalVisualizarRotina(true);
+  };
+
+  // Fechar ficha montada
+  const fecharFicha = () => {
+    Alert.alert(
+      'Fechar Ficha',
+      'Deseja fechar a ficha atual? Todas as alterações não salvas serão perdidas.',
+      [
+        { text: 'Cancelar', style: 'cancel' },
+        {
+          text: 'Fechar',
+          style: 'destructive',
+          onPress: () => {
+            setFichaSalva([]);
+            setGrupoSelecionado('');
+          },
+        },
+      ]
+    );
+  };
+
   // Salvar treino selecionado na ficha
   const salvarFicha = () => {
     if (!grupoSelecionado) {
@@ -318,13 +345,20 @@ export default function Treino() {
         <View style={styles.fichaContainer}>
           <View style={styles.fichaHeader}>
             <Text style={styles.subtitulo}>Ficha Montada:</Text>
-            <TouchableOpacity
-              style={styles.botaoSalvarRotina}
-              onPress={() => setModalSalvar(true)}
-            >
-              <Ionicons name="save-outline" size={20} color="#fff" />
-              <Text style={styles.textoSalvar}>Salvar Rotina</Text>
-            </TouchableOpacity>
+            <View style={styles.fichaHeaderButtons}>
+              <TouchableOpacity
+                style={styles.botaoFecharFicha}
+                onPress={fecharFicha}
+              >
+                <Ionicons name="close-outline" size={20} color="#fff" />
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.botaoSalvarRotina}
+                onPress={() => setModalSalvar(true)}
+              >
+                <Text style={styles.textoSalvar}>Salvar</Text>
+              </TouchableOpacity>
+            </View>
           </View>
           {fichaSalva.map((ficha, index) => (
             <View key={index} style={styles.fichaGrupo}>
@@ -374,6 +408,12 @@ export default function Treino() {
                   onPress={() => deletarRotina(rotina.id!, rotina.name)}
                 >
                   <Ionicons name="trash-outline" size={18} color="#dc3545" />
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.botaoVisualizar}
+                  onPress={() => visualizarRotina(rotina)}
+                >
+                  <Ionicons name="eye-outline" size={18} color="#28a745" />
                 </TouchableOpacity>
               </View>
             </View>
@@ -429,6 +469,48 @@ export default function Treino() {
                 </Text>
               </TouchableOpacity>
             </View>
+          </View>
+        </View>
+      </Modal>
+
+      {/* Modal para visualizar rotina */}
+      <Modal
+        visible={modalVisualizarRotina}
+        transparent={true}
+        animationType="slide"
+        onRequestClose={() => setModalVisualizarRotina(false)}
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.modalContent}>
+            <Text style={styles.modalTitle}>Detalhes da Rotina</Text>
+
+            {rotinaParaVisualizar && (
+              <>
+                <Text style={styles.rotinaName}>{rotinaParaVisualizar.name}</Text>
+                {rotinaParaVisualizar.description ? (
+                  <Text style={styles.rotinaDescription}>{rotinaParaVisualizar.description}</Text>
+                ) : null}
+
+                <Text style={styles.subtitulo}>Exercícios:</Text>
+                {rotinaParaVisualizar.exercises.map((grupo, index) => (
+                  <View key={index} style={styles.fichaGrupo}>
+                    <Text style={styles.nomeGrupo}>{grupo.grupo}</Text>
+                    {grupo.exercicios.map((ex, idx) => (
+                      <Text key={idx} style={styles.itemFicha}>
+                        {ex.nome} - {ex.series}
+                      </Text>
+                    ))}
+                  </View>
+                ))}
+              </>
+            )}
+
+            <TouchableOpacity
+              style={[styles.modalButton, styles.modalButtonClose]}
+              onPress={() => setModalVisualizarRotina(false)}
+            >
+              <Text style={[styles.modalButtonText, styles.modalButtonTextClose]}>Fechar</Text>
+            </TouchableOpacity>
           </View>
         </View>
       </Modal>
@@ -512,14 +594,24 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 10,
   },
+  fichaHeaderButtons: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  botaoFecharFicha: {
+    backgroundColor: '#dc3545',
+    paddingHorizontal: 8,
+    paddingVertical: 8,
+    borderRadius: 6,
+    minWidth: 40,
+    alignItems: 'center',
+  },
   botaoSalvarRotina: {
     backgroundColor: '#28a745',
-    flexDirection: 'row',
-    alignItems: 'center',
     paddingHorizontal: 12,
     paddingVertical: 8,
     borderRadius: 6,
-    gap: 6,
+    alignItems: 'center',
   },
   fichaGrupo: {
     marginBottom: 10,
@@ -593,6 +685,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffebee',
     borderRadius: 6,
   },
+  botaoVisualizar: {
+    padding: 8,
+    backgroundColor: '#e8f5e9',
+    borderRadius: 6,
+  },
   modalContainer: {
     flex: 1,
     backgroundColor: 'rgba(0,0,0,0.5)',
@@ -630,7 +727,7 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   modalButton: {
-    flex: 1,
+    // flex: 1,
     padding: 12,
     borderRadius: 8,
     alignItems: 'center',
@@ -650,5 +747,11 @@ const styles = StyleSheet.create({
   },
   modalButtonTextSave: {
     color: '#fff',
+  },
+  modalButtonTextClose: {
+    color: '#fff',
+  },
+  modalButtonClose: {
+    backgroundColor: '#dc3545',
   },
 });
