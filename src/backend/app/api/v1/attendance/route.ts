@@ -1,9 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db/db";
-import { eq, and } from "drizzle-orm";
+import { eq, and, desc } from "drizzle-orm";
 import { verifyToken } from "@/utils/auth";
 import { attendance } from "@/db/schema/attendance";
 import { users } from "@/db/schema/users";
+import { workoutRoutines } from "@/db/schema/workoutRoutines";
 
 // GET - Buscar presenças do usuário
 export async function GET(request: NextRequest) {
@@ -34,9 +35,24 @@ export async function GET(request: NextRequest) {
     }
 
     const userAttendances = await db
-      .select()
+      .select({
+        id: attendance.id,
+        userId: attendance.userId,
+        date: attendance.date,
+        present: attendance.present,
+        description: attendance.description,
+        createdAt: attendance.createdAt,
+        updatedAt: attendance.updatedAt,
+        workoutRoutine: {
+          id: workoutRoutines.id,
+          name: workoutRoutines.name,
+          description: workoutRoutines.description,
+        }
+      })
       .from(attendance)
-      .where(eq(attendance.userId, userIdToQuery));
+      .leftJoin(workoutRoutines, eq(attendance.workoutRoutineId, workoutRoutines.id))
+      .where(eq(attendance.userId, userIdToQuery))
+      .orderBy(desc(attendance.date));
 
     return NextResponse.json({ attendances: userAttendances }, { status: 200 });
   } catch (error) {
@@ -58,10 +74,22 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Token inválido" }, { status: 401 });
     }
 
-    const { date, present } = await request.json();
+    const { date, present, workoutRoutineId, description, userId: targetUserId } = await request.json();
     
     if (!date || typeof present !== 'boolean') {
       return NextResponse.json({ error: "Data e status são obrigatórios" }, { status: 400 });
+    }
+
+    // Determinar para qual usuário criar/atualizar a presença
+    let userIdToUse = decoded.id;
+    
+    if (targetUserId && targetUserId !== decoded.id) {
+      // Verificar se é admin
+      const [currentUser] = await db.select().from(users).where(eq(users.id, decoded.id));
+      if (!currentUser || currentUser.role !== 'ADMIN') {
+        return NextResponse.json({ error: "Acesso negado" }, { status: 403 });
+      }
+      userIdToUse = targetUserId;
     }
 
     // Verificar se já existe uma entrada para essa data
@@ -70,7 +98,7 @@ export async function POST(request: NextRequest) {
       .from(attendance)
       .where(
         and(
-          eq(attendance.userId, decoded.id),
+          eq(attendance.userId, userIdToUse),
           eq(attendance.date, new Date(date))
         )
       );
@@ -79,7 +107,12 @@ export async function POST(request: NextRequest) {
       // Atualizar registro existente
       const [updatedAttendance] = await db
         .update(attendance)
-        .set({ present, updatedAt: new Date() })
+        .set({ 
+          present, 
+          workoutRoutineId: workoutRoutineId || null,
+          description: description || "",
+          updatedAt: new Date() 
+        })
         .where(eq(attendance.id, existingAttendance[0].id))
         .returning();
 
@@ -89,9 +122,11 @@ export async function POST(request: NextRequest) {
       const [newAttendance] = await db
         .insert(attendance)
         .values({
-          userId: decoded.id,
+          userId: userIdToUse,
           date: new Date(date),
-          present
+          present,
+          workoutRoutineId: workoutRoutineId || null,
+          description: description || ""
         })
         .returning();
 
