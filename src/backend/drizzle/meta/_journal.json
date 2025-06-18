@@ -15,6 +15,13 @@
       "when": 1749511013268,
       "tag": "0001_abnormal_george_stacy",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1750273549142,
+      "tag": "0002_abandoned_ghost_rider",
+      "breakpoints": true
     }
   ]
 }

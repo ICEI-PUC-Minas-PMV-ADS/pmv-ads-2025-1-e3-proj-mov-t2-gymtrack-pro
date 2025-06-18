@@ -1,0 +1,3 @@
+ALTER TABLE "attendance" ADD COLUMN "workout_routine_id" uuid;--> statement-breakpoint
+ALTER TABLE "attendance" ADD COLUMN "description" text DEFAULT '' NOT NULL;--> statement-breakpoint
+ALTER TABLE "attendance" ADD CONSTRAINT "attendance_workout_routine_id_workout_routines_id_fk" FOREIGN KEY ("workout_routine_id") REFERENCES "public"."workout_routines"("id") ON DELETE no action ON UPDATE no action;
