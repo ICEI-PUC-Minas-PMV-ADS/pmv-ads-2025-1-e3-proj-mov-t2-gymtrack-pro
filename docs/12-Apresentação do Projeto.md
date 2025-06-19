@@ -20,5 +20,11 @@ O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do conte
 ## Conjunto de Slides (Estrutura)
 
 O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos.
+
+## Estratégias que Impulsionam Resultados
  
 [Slide GinTrack Pro.pptx](https://github.com/user-attachments/files/20825925/Slide.GinTrack.Pro.pptx)
+
+## Visão, Planejamento e Execução
+
+[Software-para-Gestao-de-Academias-Modernizacao-e-Eficiencia.pdf](https://github.com/user-attachments/files/20825960/Software-para-Gestao-de-Academias-Modernizacao-e-Eficiencia.pdf)
