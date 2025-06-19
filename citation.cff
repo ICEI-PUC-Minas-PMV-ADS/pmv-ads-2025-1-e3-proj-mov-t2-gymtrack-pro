@@ -1,29 +1,31 @@
 message: Please cite this software using these metadata.
-title:
+title: GymTrack Pro
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Fonseca
+    given-names: Álvaro Natali Kumaira da
+  - family-names: Sousa
+    given-names: Ana Carolina Alves de
+  - family-names: Martins
+    given-names: Beatriz Rodrigues
+  - family-names: Botelho
+    given-names: Eduardo Porto
+  - family-names: Murtinho
+    given-names: Thiago Vinicius Martins
+  - family-names: Andrade
+    given-names: Vitor de Paula
+  - family-names: Rocha
+    given-names: João Gabriel Barrozo
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Fritzke Junior
+    given-names: Udo
 keywords:
-  - 
-  - 
-repository-code: 
+  - fitness
+  - mobile-app
+  - workout-tracking
+  - gym
+  - exercise
+  - health
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e3-proj-mov-t2-gymtrack-pro
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2025-01-01
