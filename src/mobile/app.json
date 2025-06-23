@@ -37,9 +37,12 @@
       [
         "expo-asset",
         {
-          "assets": ["./assets/images/logo.png"]
+          "assets": [
+            "./assets/images/logo.png"
+          ]
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
